@@ -1,0 +1,9 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/colors' as *;
+
+.input {
+  all: unset;
+  padding: $spacing-sm $spacing-md;
+
+  border: 1px solid $color-gray;
+}

@@ -1,4 +1,18 @@
 {
+  "Nav": {
+    "home": "Heim",
+    "blog": "Der Blog",
+    "aboutUs": "Über uns",
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "Header": {
+    "videoButton": "Video über uns"
+  },
+  "EmailForm": {
+    "title": "Abonnieren Sie unseren Newsletter, um die neuesten Updates und Neuigkeiten zu erhalten",
+    "button": "Abonnieren",
+    "placeholder": "Geben Sie Ihre E-Mail ein"
+  },
   "Home": {
     "title": "Hallo Welt!",
     "about": "Gehen Sie auf die About-Seite"

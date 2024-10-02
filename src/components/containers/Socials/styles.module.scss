@@ -1,0 +1,6 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as *;
+
+.socialsContainer {
+  @include flex-with-options(row, $spacing-md, space-between, center);
+}

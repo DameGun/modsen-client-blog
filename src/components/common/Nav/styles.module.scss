@@ -1,0 +1,32 @@
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/extends' as *;
+
+.navOuterContainer {
+  @include flex-with-options(row, 0, space-between, center);
+  @extend %container;
+
+  color: $color-white;
+
+  .navInnerContainer {
+    @include flex-with-options(row, $spacing-md, space-between, center);
+
+    .nav {
+      @include flex-with-options(row, $spacing-md, space-between, center);
+      @extend .body1;
+
+      padding: $spacing-sm 0;
+
+      .link {
+        &.active {
+          color: $color-light-gray;
+        }
+
+        &:hover {
+          color: $color-light-gray;
+        }
+      }
+    }
+  }
+}

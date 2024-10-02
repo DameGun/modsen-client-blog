@@ -1,0 +1,24 @@
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/extends' as *;
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as *;
+
+.footer {
+  background-color: $color-dark-blue;
+  color: $color-white;
+
+  .footerInnerContainer {
+    @include flex-with-options(column, $spacing-md, space-between);
+    @extend %container;
+
+    .contactsContainer {
+      @include flex-with-options(row, 0, space-between);
+      padding-bottom: $spacing-sm;
+
+      .address {
+        @extend .body1;
+        color: $color-light-gray;
+      }
+    }
+  }
+}

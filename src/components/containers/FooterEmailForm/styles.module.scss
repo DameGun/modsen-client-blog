@@ -1,0 +1,21 @@
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as *;
+
+.emailFormFooterContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $spacing-xl;
+  align-items: center;
+
+  padding: $spacing-lg $spacing-xl;
+  background-color: $color-dark-gray;
+
+  .emailFormFooter {
+    @include flex-with-options(row, $spacing-sm, space-between, stretch);
+
+    :first-child {
+      width: 100%;
+    }
+  }
+}
