@@ -1,5 +1,5 @@
-@use '@/styles/abstracts/variables' as *;
 @use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
 
 .input {
   all: unset;

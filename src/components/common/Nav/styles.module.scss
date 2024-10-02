@@ -1,32 +1,21 @@
 @use '@/styles/abstracts/colors' as *;
 @use '@/styles/abstracts/mixins' as *;
-@use '@/styles/abstracts/variables' as *;
 @use '@/styles/abstracts/extends' as *;
+@import '@/styles/abstracts/variables.module';
 
-.navOuterContainer {
-  @include flex-with-options(row, 0, space-between, center);
-  @extend %container;
+.nav {
+  @include flex-with-options(row, $spacing-md, space-between, center);
+  @extend .body1;
 
-  color: $color-white;
+  padding: $spacing-sm 0;
 
-  .navInnerContainer {
-    @include flex-with-options(row, $spacing-md, space-between, center);
+  .link {
+    &.active {
+      color: $color-light-gray;
+    }
 
-    .nav {
-      @include flex-with-options(row, $spacing-md, space-between, center);
-      @extend .body1;
-
-      padding: $spacing-sm 0;
-
-      .link {
-        &.active {
-          color: $color-light-gray;
-        }
-
-        &:hover {
-          color: $color-light-gray;
-        }
-      }
+    &:hover {
+      color: $color-light-gray;
     }
   }
 }

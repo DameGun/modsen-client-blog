@@ -1,6 +1,6 @@
 @use '@/styles/abstracts/colors' as *;
 @use '@/styles/abstracts/mixins' as *;
-@use '@/styles/abstracts/variables' as *;
+@import '@/styles/abstracts/variables.module';
 
 .emailFormFooterContainer {
   display: grid;
@@ -11,11 +11,26 @@
   padding: $spacing-lg $spacing-xl;
   background-color: $color-dark-gray;
 
+  @include tablet-breakpoint {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0;
+    padding: $spacing-sm;
+  }
+
   .emailFormFooter {
     @include flex-with-options(row, $spacing-sm, space-between, stretch);
 
     :first-child {
       width: 100%;
+    }
+
+    @include mobile-breakpoint {
+      flex-direction: column;
+
+      :first-child {
+        width: unset;
+      }
     }
   }
 }

@@ -1,0 +1,15 @@
+$spacing-sm: 16px;
+$spacing-md: 26px;
+$spacing-lg: 48px;
+$spacing-xl: 80px;
+
+$mobile-width: 600px;
+$tablet-lg-width: 1100px;
+$tablet-md-width: 900px;
+
+$icon-size: 26;
+
+:export {
+  iconSize: $icon-size;
+  tabletLgWidth: $tablet-lg-width;
+}

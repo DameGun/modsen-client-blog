@@ -8,8 +8,11 @@ import { Nav } from '../Nav';
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <Nav />
       <div className={styles.footerInnerContainer}>
+        <div className={styles.footerNavContainer}>
+          <h4>Modsen Client Blog</h4>
+          <Nav />
+        </div>
         <FooterEmailForm />
         <div className={styles.contactsContainer}>
           <div className={styles.address}>
