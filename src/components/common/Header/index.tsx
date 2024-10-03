@@ -7,28 +7,27 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/ui';
-import { useDisableTransition } from '@/hooks/useDisableTransition';
+import { useDisableTransition, useMediaQuery } from '@/hooks';
+import closeIcon from '@/public/icons/close-icon.svg';
+import menuIcon from '@/public/icons/menu-icon.svg';
 import variables from '@/styles/abstracts/variables.module.scss';
+import { parseStylesVariableAsNumber } from '@/utils/styles';
 
 import styles from './styles.module.scss';
 
 import { Nav } from '../Nav';
 
-import closeIcon from '/public/icons/close-icon.svg';
-import menuIcon from '/public/icons/menu-icon.svg';
-
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const handleMenuOnResize = useCallback(() => {
-    if (window.innerWidth > parseInt(styles.tabletLgWidth)) {
-      setIsOpen(false);
-    }
-  }, []);
-  const disableTransition = useDisableTransition(handleMenuOnResize);
+
+  const onDesktopResize = useCallback(() => setIsOpen(false), []);
+  useMediaQuery({ query: styles.mediaDesktopQuery, onMatch: onDesktopResize });
+  const disableTransition = useDisableTransition();
 
   const t = useTranslations('Header');
 
-  const handleOpen = () => setIsOpen(!isOpen);
+  const handleOpen = () => setIsOpen(true);
+  const handleClose = () => setIsOpen(false);
 
   return (
     <header className={styles.header}>
@@ -41,22 +40,22 @@ export function Header() {
             [styles.disableTransition]: disableTransition,
           })}
         >
-          <Nav onNavigate={handleOpen} />
+          <Nav onNavigate={handleClose} />
           <Button variant='secondary'>{t('videoButton')}</Button>
         </div>
         <Image
           className={cn(styles.menuButton, { [styles.isVisible]: isOpen })}
           src={closeIcon}
-          width={+variables.iconSize}
-          height={+variables.iconSize}
+          width={parseStylesVariableAsNumber(variables.iconSize)}
+          height={parseStylesVariableAsNumber(variables.iconSize)}
           alt='Open navigation button'
-          onClick={handleOpen}
+          onClick={handleClose}
         />
         <Image
           className={cn(styles.menuButton, { [styles.isVisible]: !isOpen })}
           src={menuIcon}
-          width={+variables.iconSize}
-          height={+variables.iconSize}
+          width={parseStylesVariableAsNumber(variables.iconSize)}
+          height={parseStylesVariableAsNumber(variables.iconSize)}
           alt='Close navigation button'
           onClick={handleOpen}
         />

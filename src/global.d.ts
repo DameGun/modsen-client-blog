@@ -1,7 +1,5 @@
-import en from '@/i18n/localizations/en.json';
-
-type Messages = typeof en;
+import { MessagesType } from '@/types/i18n';
 
 declare global {
-  interface IntlMessages extends Messages {}
+  interface IntlMessages extends MessagesType {}
 }

@@ -9,7 +9,10 @@ $tablet-md-width: 900px;
 
 $icon-size: 26;
 
+$media-desktop: unquote('(min-width: #{$tablet-lg-width})');
+
 :export {
   iconSize: $icon-size;
   tabletLgWidth: $tablet-lg-width;
+  mediaDesktopQuery: $media-desktop;
 }

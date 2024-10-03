@@ -21,7 +21,7 @@
     color: $color-white;
 
     .linksContainer {
-      @include flex-with-options(row, $spacing-md, end, center);
+      @include flex-with-options(row, $spacing-md, flex-end, center);
 
       @include tablet-breakpoint {
         & > nav {

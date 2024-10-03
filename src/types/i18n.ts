@@ -1,5 +1,9 @@
+import en from '@/public/localizations/en.json';
+
 type LocaleLayoutParams = {
   locale: string;
 };
 
-export type { LocaleLayoutParams };
+type MessagesType = typeof en;
+
+export type { LocaleLayoutParams, MessagesType };

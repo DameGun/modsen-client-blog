@@ -19,7 +19,7 @@ export function Socials({ facebook, twitter, instagram, linkedIn }: SocialsProps
     <div className={styles.socialsContainer}>
       <ImageLink href={facebook} src={facebookIcon} alt='Facebook Logo' />
       <ImageLink href={twitter} src={twitterIcon} alt='Twitter Logo' />
-      <ImageLink href={instagram} src={instagramIcon} alt='Instagran Logo' />
+      <ImageLink href={instagram} src={instagramIcon} alt='Instagram Logo' />
       <ImageLink href={linkedIn} src={linkedInIcon} alt='LinkedIn Logo' />
     </div>
   );

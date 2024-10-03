@@ -9,6 +9,6 @@ export default getRequestConfig(async ({ locale }) => {
   if (!routing.locales.includes(locale as Locales)) notFound();
 
   return {
-    messages: (await import(`@/i18n/localizations/${locale}.json`)).default,
+    messages: (await import(`/public/localizations/${locale}.json`)).default,
   };
 });
