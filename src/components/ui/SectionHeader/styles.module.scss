@@ -1,0 +1,9 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+
+.sectionHeader {
+  @include flex-with-options(column, $spacing-sm, center, center);
+  padding: $spacing-xl 0;
+  background-color: $color-dark-white;
+}

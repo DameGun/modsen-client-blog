@@ -3,18 +3,63 @@
     "home": "Heim",
     "blog": "Der Blog",
     "aboutUs": "Über uns",
-    "contactUs": "Kontaktieren Sie uns"
+    "contactUs": "Kontaktieren Sie uns",
+    "privacyPolicy": "Datenschutzerklärung"
   },
+
   "Header": {
     "videoButton": "Video über uns"
   },
+
   "EmailForm": {
     "title": "Abonnieren Sie unseren Newsletter, um die neuesten Updates und Neuigkeiten zu erhalten",
     "button": "Abonnieren",
     "placeholder": "Geben Sie Ihre E-Mail ein"
   },
+
   "Home": {
     "title": "Hallo Welt!",
     "about": "Gehen Sie auf die About-Seite"
+  },
+
+  "PrivacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdatedAt": "Zuletzt aktualisiert am 27.Januar 2022",
+    "Introduction": {
+      "title": "Einführung",
+      "content": "Wir schätzen Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Daten zu schützen. Diese Datenschutzerklärung informiert Sie darüber, wie wir mit Ihren personenbezogenen Daten umgehen, wenn Sie unsere Website besuchen, unsere Dienste nutzen, und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt."
+    },
+    "InfoWeCollect": {
+      "title": "Informationen, die wir sammeln",
+      "content": "Wir können verschiedene Arten von personenbezogenen Daten über Sie sammeln, verwenden, speichern und übertragen, einschließlich, aber nicht beschränkt auf:",
+      "list": [
+        "Identitätsdaten: Enthält Vorname, Nachname, Benutzername oder eine ähnliche Kennung.",
+        "Kontaktdaten: E-Mail-Adresse und Telefonnummern.",
+        "Technische Daten: Internetprotokoll (IP)-Adresse, Browsertyp und -version, Zeitzoneneinstellung, Browser-Plug-In-Typen, Betriebssystem und Plattform."
+      ]
+    },
+    "DataUsage": {
+      "title": "Wie wir Ihre Daten verwenden",
+      "content": "Wir werden Ihre personenbezogenen Daten nur verwenden, wenn das Gesetz es uns erlaubt. Am häufigsten werden wir Ihre Daten unter den folgenden Umständen verwenden:",
+      "list": [
+        "Um unsere Dienste bereitzustellen und zu warten.",
+        "Um Sie über Änderungen an unseren Diensten zu informieren.",
+        "Um die Nutzung unseres Dienstes zu überwachen.",
+        "Um technische Probleme zu erkennen, zu verhindern und zu beheben."
+      ]
+    },
+    "DataRetention": {
+      "title": "Vorratsdatenspeicherung",
+      "content": "Wir werden Ihre personenbezogenen Daten nur so lange aufbewahren, wie es zur Erfüllung der Zwecke erforderlich ist, für die wir sie erhoben haben, einschließlich zur Erfüllung gesetzlicher, buchhalterischer oder Berichtspflichten."
+    },
+    "SharingYourData": {
+      "title": "Weitergabe Ihrer Daten",
+      "content": "Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, außer unter den folgenden Umständen:",
+      "list": [
+        "Wenn wir einer gesetzlichen Verpflichtung nachkommen müssen.",
+        "Wenn wir unsere Rechte oder die Rechte anderer schützen müssen.",
+        "Mit Dienstleistern, die in unserem Auftrag Funktionen ausführen, wie z. B. Hosting-Dienste oder Zahlungsabwicklung."
+      ]
+    }
   }
 }

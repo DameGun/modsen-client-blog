@@ -11,7 +11,7 @@ export function Footer() {
       <div className={styles.footerInnerContainer}>
         <div className={styles.footerNavContainer}>
           <h4>Modsen Client Blog</h4>
-          <Nav />
+          <Nav policyVisible />
         </div>
         <FooterEmailForm />
         <div className={styles.contactsContainer}>
