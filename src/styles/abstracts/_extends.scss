@@ -1,0 +1,36 @@
+%container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+%button {
+  border: unset;
+  font-family: var(--font-sen);
+  cursor: pointer;
+  padding: 16px 48px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.body1,
+.body2,
+.label {
+  font-weight: normal;
+}
+
+.body1 {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.body2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 20px;
+}
