@@ -1,0 +1,69 @@
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/extends' as *;
+@import '@/styles/abstracts/variables.module';
+
+.header {
+  background-color: $color-dark-blue;
+
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $color-dark-blue;
+    opacity: 0.3;
+  }
+
+  .headerNavContainer {
+    @extend %container;
+    @include flex-with-options(row, $spacing-md, space-between, center);
+
+    color: $color-white;
+
+    .linksContainer {
+      @include flex-with-options(row, $spacing-md, flex-end, center);
+
+      @include tablet-breakpoint {
+        & > nav {
+          flex-direction: column;
+        }
+
+        transition: 0.4s;
+
+        transform: translateX(100%);
+        flex-direction: column;
+        justify-content: start;
+        padding-top: $spacing-xl;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background-color: $color-dark-gray;
+
+        &.isOpen {
+          transform: translateX(0);
+        }
+
+        &.disableTransition {
+          transition: none;
+        }
+      }
+
+      @include tablet-breakpoint(md) {
+        width: 100%;
+      }
+    }
+
+    .menuButton {
+      display: none;
+
+      @include tablet-breakpoint(lg) {
+        &.isVisible {
+          display: block;
+          z-index: 200;
+        }
+      }
+    }
+  }
+}

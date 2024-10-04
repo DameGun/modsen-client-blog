@@ -1,0 +1,20 @@
+{
+  "Nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "Header": {
+    "videoButton": "Video about us"
+  },
+  "EmailForm": {
+    "title": "Subscribe to our news letter to get latest updates and news",
+    "button": "Subscribe",
+    "placeholder": "Enter Your Email"
+  },
+  "Home": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  }
+}
