@@ -15,22 +15,23 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 0;
+    row-gap: $spacing-md;
     padding: $spacing-sm;
   }
 
   .emailFormFooter {
-    @include flex-with-options(row, $spacing-sm, space-between, stretch);
+    @include flex-with-options(row, $spacing-sm, center, stretch);
 
     :first-child {
-      width: 100%;
+      flex: 3;
+    }
+
+    button {
+      flex: 1;
     }
 
     @include mobile-breakpoint {
       flex-direction: column;
-
-      :first-child {
-        width: unset;
-      }
     }
   }
 }

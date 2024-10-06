@@ -6,8 +6,9 @@
   @include flex-with-options(row, $spacing-md, flex-start, center);
 
   color: white;
-  padding: $spacing-md;
+  padding: $spacing-xs;
   visibility: hidden;
+  min-width: $spacing-lg;
 
   &.isSuccess,
   &.isError {

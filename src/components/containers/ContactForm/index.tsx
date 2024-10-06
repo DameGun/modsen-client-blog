@@ -28,7 +28,7 @@ export function ContactForm() {
     mode: 'onChange',
     resolver: yupResolver(contactValidationSchema),
   });
-  const { isLoading, isError, isSuccess, handleEmail } = useEmail(reset);
+  const { isLoading, isError, isSuccess, handleEmail } = useEmail({ resetForm: reset });
 
   const onSubmit: SubmitHandler<ContactFormType> = async (data) => {
     await handleEmail({ data, emailType: 'contact' });

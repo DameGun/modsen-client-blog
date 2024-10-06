@@ -19,4 +19,4 @@ type SendEmailProps =
       emailType: 'news';
     };
 
-export type { ContactFormType, SendEmailProps };
+export type { ContactFormType, FooterContactFormType, SendEmailProps };
