@@ -1,8 +1,26 @@
 @use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/mixins' as *;
 @import '@/styles/abstracts/extends.module';
 
-.primary {
+.primary,
+.secondary {
   @extend %button;
+  position: relative;
+
+  &.isLoading {
+    font-size: 0;
+
+    @include spinner($color-dark-blue);
+  }
+
+  &.isDisabled,
+  &.isLoading {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+.primary {
   background-color: $color-yellow;
 
   &:hover {
@@ -11,7 +29,6 @@
 }
 
 .secondary {
-  @extend %button;
   background-color: $color-white;
 
   &:hover {

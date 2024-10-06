@@ -1,7 +1,13 @@
+$spacing-xs: 8px;
 $spacing-sm: 16px;
 $spacing-md: 26px;
 $spacing-lg: 48px;
 $spacing-xl: 80px;
+
+$z-index-sm: 100;
+$z-index-md: 200;
+$z-index-lg: 500;
+$z-index-xl: 800;
 
 $mobile-width: 600px;
 $tablet-lg-width: 1100px;
@@ -11,8 +17,11 @@ $icon-size: 26;
 
 $media-desktop: unquote('(min-width: #{$tablet-lg-width})');
 
+$map-height: 500px;
+
 :export {
   iconSize: $icon-size;
   tabletLgWidth: $tablet-lg-width;
   mediaDesktopQuery: $media-desktop;
+  mapHeight: $map-height;
 }

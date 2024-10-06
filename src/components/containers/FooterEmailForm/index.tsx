@@ -1,21 +1,51 @@
 'use client';
 
+import { SubmitHandler, useForm } from 'react-hook-form';
+
+import { yupResolver } from '@hookform/resolvers/yup';
 import { useTranslations } from 'next-intl';
 
-import { Button, Input } from '@/components/ui';
+import { Button, RelativeAlert } from '@/components/ui';
+import { useEmail } from '@/hooks';
+import { FooterContactFormType } from '@/types/contact';
 
 import styles from './styles.module.scss';
+import { footerEmailValidationSchema } from './validation';
+
+import { FormField } from '../FormField';
 
 export function FooterEmailForm() {
   const t = useTranslations('EmailForm');
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isValid, errors },
+  } = useForm<FooterContactFormType>({
+    mode: 'onChange',
+    resolver: yupResolver(footerEmailValidationSchema),
+  });
+
+  const { isLoading, isError, isSuccess, handleEmail } = useEmail({ resetForm: reset });
+
+  const onSubmit: SubmitHandler<FooterContactFormType> = async (data) => {
+    await handleEmail({ data, emailType: 'news' });
+  };
 
   return (
     <div className={styles.emailFormFooterContainer}>
       <h2>{t('title')}</h2>
-      <div className={styles.emailFormFooter}>
-        <Input placeholder={t('placeholder')} />
-        <Button>{t('button')}</Button>
-      </div>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <FormField errorText={errors.email?.message}>
+          <div className={styles.emailFormFooter}>
+            <input placeholder={t('placeholder')} {...register('email')} />
+            <Button isDisabled={!isValid} isLoading={isLoading}>
+              {t('button')}
+            </Button>
+            <RelativeAlert minimize isError={isError} isSuccess={isSuccess} />
+          </div>
+        </FormField>
+      </form>
     </div>
   );
 }

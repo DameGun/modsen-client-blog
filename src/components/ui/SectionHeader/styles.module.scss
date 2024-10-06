@@ -1,9 +1,20 @@
 @use '@/styles/abstracts/mixins' as *;
 @use '@/styles/abstracts/colors' as *;
 @import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
 
-.sectionHeader {
-  @include flex-with-options(column, $spacing-sm, center, center);
+.sectionHeaderOuterContainer {
   padding: $spacing-xl 0;
   background-color: $color-dark-white;
+
+  .sectionHeaderInnerContainer {
+    @extend .containerMd;
+    @include flex-with-options(column, $spacing-md, center, center);
+    text-align: center;
+
+    & > p {
+      @extend .body1;
+      color: $color-gray;
+    }
+  }
 }

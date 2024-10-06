@@ -1,0 +1,11 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+
+.contactForm {
+  @include flex-with-options(column, $spacing-sm);
+
+  &.isLoading &::after {
+    background-color: red;
+  }
+}

@@ -61,5 +61,45 @@
         "Mit Dienstleistern, die in unserem Auftrag Funktionen ausführen, wie z. B. Hosting-Dienste oder Zahlungsabwicklung."
       ]
     }
+  },
+
+  "Contact": {
+    "title": "Lass uns ein Gespräch beginnen",
+    "content": "Wir sind hier, um Ihnen bei Fragen oder Anfragen zu helfen. Kontaktieren Sie uns und wir melden uns so schnell wie möglich bei Ihnen.",
+    "WorkingHours": {
+      "title": "Arbeitszeit",
+      "days": "Montag bis Freitag",
+      "hours": "9:00 bis 8:00 Uhr",
+      "additional": "Unser Support-Team ist 24/7 verfügbar"
+    },
+    "contactUs": "Kontaktieren Sie uns",
+    "Form": {
+      "fullName": "Vollständiger Name",
+      "email": "Ihre E-Mail-Adresse",
+      "reasons": [
+        "Abfragebezogen",
+        "Technischer Support",
+        "Feedback oder Vorschläge",
+        "Partnerschaftsmöglichkeiten"
+      ],
+      "message": "Nachricht",
+      "button": "Nachricht senden"
+    }
+  },
+
+  "Departments": {
+    "loadingHolder": "Initialisieren der Karte",
+    "Germany": {
+      "title": "Abteilung in Deutschland",
+      "description": "Pariser Platz, 10117 Berlin, Deutchland"
+    },
+    "Poland": {
+      "title": "Abteilung in Polen",
+      "description": "plac Zamkowy 4, 00-277 Warszawa, Polen"
+    },
+    "UnitedKingdom": {
+      "title": "Abteilung in Vereinigtes Königreich",
+      "description": "London SW1A 1AA, Vereinigtes Königreich"
+    }
   }
 }

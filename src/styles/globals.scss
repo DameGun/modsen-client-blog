@@ -1,5 +1,6 @@
 @use './abstracts/typography' as *;
 @use './abstracts/colors' as *;
+@import './abstracts/variables.module';
 
 html,
 body {
@@ -25,4 +26,17 @@ main {
 
 ul {
   list-style-position: inside;
+}
+
+input,
+textarea,
+select {
+  all: unset;
+  padding: $spacing-sm $spacing-md;
+
+  border: 1px solid $color-gray;
+}
+
+select {
+  appearance: menulist;
 }
