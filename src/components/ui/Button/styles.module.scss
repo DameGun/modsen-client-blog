@@ -1,4 +1,5 @@
 @use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/mixins' as *;
 @import '@/styles/abstracts/extends.module';
 
 .primary,
@@ -8,38 +9,14 @@
 
   &.isLoading {
     font-size: 0;
+
+    @include spinner($color-dark-blue);
   }
 
   &.isDisabled,
   &.isLoading {
     opacity: 0.6;
     pointer-events: none;
-  }
-
-  &.isLoading::after {
-    content: '';
-    position: absolute;
-    width: #{$icon-size}px;
-    height: #{$icon-size}px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border: 4px solid transparent;
-    border-top-color: $color-dark-blue;
-    border-radius: 50%;
-    animation: button-loading-spinner 1s ease infinite;
-
-    @keyframes button-loading-spinner {
-      from {
-        transform: rotate(0turn);
-      }
-
-      to {
-        transform: rotate(1turn);
-      }
-    }
   }
 }
 

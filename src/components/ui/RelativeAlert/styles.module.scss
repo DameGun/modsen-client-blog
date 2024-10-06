@@ -9,6 +9,7 @@
   padding: $spacing-xs;
   visibility: hidden;
   min-width: $spacing-lg;
+  min-height: $spacing-lg;
 
   &.isSuccess,
   &.isError {

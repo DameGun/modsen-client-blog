@@ -17,8 +17,11 @@ $icon-size: 26;
 
 $media-desktop: unquote('(min-width: #{$tablet-lg-width})');
 
+$map-height: 500px;
+
 :export {
   iconSize: $icon-size;
   tabletLgWidth: $tablet-lg-width;
   mediaDesktopQuery: $media-desktop;
+  mapHeight: $map-height;
 }

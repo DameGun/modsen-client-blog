@@ -23,9 +23,8 @@ export function useEmail({ resetAfter = BASE_ALERT_RESET_TIME, resetForm }: Emai
       setIsLoading(false);
       setIsError(false);
       setIsSuccess(false);
-      resetForm?.();
     }, resetAfter);
-  }, [resetAfter, resetForm]);
+  }, [resetAfter]);
 
   const handleEmail = useCallback(
     async (props: SendEmailProps) => {
@@ -39,11 +38,10 @@ export function useEmail({ resetAfter = BASE_ALERT_RESET_TIME, resetForm }: Emai
         setIsError(true);
       } finally {
         setIsLoading(false);
-
-        if (resetAfter) resetCallback();
+        resetCallback();
       }
     },
-    [resetForm, resetAfter, resetCallback]
+    [resetForm, resetCallback]
   );
 
   return { isLoading, isError, isSuccess, handleEmail };

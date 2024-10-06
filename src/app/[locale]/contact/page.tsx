@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-import { ContactForm } from '@/components/containers';
+import { ContactForm, MapboxMap } from '@/components/containers';
 import { SectionHeader } from '@/components/ui';
 import extendsStyles from '@/styles/abstracts/extends.module.scss';
 
@@ -31,6 +31,7 @@ export default function ContactPage() {
         </section>
         <ContactForm />
       </section>
+      <MapboxMap />
     </>
   );
 }

@@ -85,5 +85,21 @@
       "message": "Nachricht",
       "button": "Nachricht senden"
     }
+  },
+
+  "Departments": {
+    "loadingHolder": "Initialisieren der Karte",
+    "Germany": {
+      "title": "Abteilung in Deutschland",
+      "description": "Pariser Platz, 10117 Berlin, Deutchland"
+    },
+    "Poland": {
+      "title": "Abteilung in Polen",
+      "description": "plac Zamkowy 4, 00-277 Warszawa, Polen"
+    },
+    "UnitedKingdom": {
+      "title": "Abteilung in Vereinigtes Königreich",
+      "description": "London SW1A 1AA, Vereinigtes Königreich"
+    }
   }
 }

@@ -1,0 +1,25 @@
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/mixins' as *;
+@import '@/styles/abstracts/variables.module';
+
+.mapContainer {
+  height: $map-height;
+  overflow: hidden;
+}
+
+.mapLoading {
+  position: absolute;
+  display: flex;
+  height: $map-height;
+  width: 100%;
+  background-color: $color-dark-blue;
+  opacity: 0.6;
+  z-index: $z-index-lg;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+
+  @include spinner {
+    top: $spacing-xl;
+  }
+}
