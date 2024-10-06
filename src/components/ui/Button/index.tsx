@@ -8,8 +8,18 @@ import styles from './styles.module.scss';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariants;
+  isDisabled?: boolean;
+  isLoading?: boolean;
 };
 
-export function Button({ variant = 'primary', ...props }: ButtonProps) {
-  return <button {...props} className={cn(styles[variant])} />;
+export function Button({ variant = 'primary', isDisabled, isLoading, ...props }: ButtonProps) {
+  return (
+    <button
+      {...props}
+      className={cn(styles[variant], {
+        [styles.isDisabled]: isDisabled,
+        [styles.isLoading]: isLoading,
+      })}
+    />
+  );
 }

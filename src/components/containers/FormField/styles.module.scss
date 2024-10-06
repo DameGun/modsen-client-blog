@@ -1,0 +1,16 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+
+.formField {
+  @include flex-with-options(column, $spacing-xs);
+
+  .errorText {
+    color: $color-red;
+  }
+
+  .errorText:empty::before {
+    content: '';
+    display: inline-block;
+  }
+}
