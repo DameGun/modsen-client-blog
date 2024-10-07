@@ -5,8 +5,8 @@ type ListProps = {
 export function List({ list }: ListProps) {
   return (
     <ul>
-      {list.map((val, index) => (
-        <li key={index}>{val}</li>
+      {list.map((val) => (
+        <li key={val}>{val}</li>
       ))}
     </ul>
   );

@@ -20,6 +20,7 @@ export function MapboxMap() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    if (!isLoading) return;
     if (!mapContainerRef.current) return;
 
     const map = new Map({
@@ -35,8 +36,7 @@ export function MapboxMap() {
     map.once('load', () => setIsLoading(false));
 
     return () => map.remove();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [locale, t, isLoading]);
 
   return (
     <div ref={mapContainerRef} className={styles.mapContainer}>
