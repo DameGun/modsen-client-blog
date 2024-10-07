@@ -3,18 +3,103 @@
     "home": "Home",
     "blog": "Blog",
     "aboutUs": "About Us",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy Policy"
   },
+
   "Header": {
     "videoButton": "Video about us"
   },
+
   "EmailForm": {
     "title": "Subscribe to our news letter to get latest updates and news",
     "button": "Subscribe",
     "placeholder": "Enter Your Email"
   },
+
   "Home": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdatedAt": "Last Updated on 27th January 2022",
+    "Introduction": {
+      "title": "Introduction",
+      "content": "We value your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website, use our services, and tell you about your privacy rights and how the law protects you."
+    },
+    "InfoWeCollect": {
+      "title": "Information We Collect",
+      "content": "We may collect, use, store, and transfer different kinds of personal data about you including, but not limited to:",
+      "list": [
+        "Identity Data: Includes first name, last name, username, or similar identifier.",
+        "Contact Data: Email address and phone numbers.",
+        "Technical Data: Internet protocol (IP) address, browser type and version, time zone setting, browser plug-in types, operating system, and platform."
+      ]
+    },
+    "DataUsage": {
+      "title": "How We Use Your Data",
+      "content": "We will only use your personal data when the law allows us to. Most commonly, we will use your data in the following circumstances:",
+      "list": [
+        "To provide and maintain our services.",
+        "To notify you about changes to our services.",
+        "To monitor the usage of our service.",
+        "To detect, prevent, and address technical issues."
+      ]
+    },
+    "DataRetention": {
+      "title": "Data Retention",
+      "content": "We will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements."
+    },
+    "SharingYourData": {
+      "title": "Sharing Your Data",
+      "content": "We do not share your personal data with third parties except in the following circumstances:",
+      "list": [
+        "When we are required to comply with a legal obligation.",
+        "When we need to protect our rights or the rights of others.",
+        "With service providers who perform functions on our behalf, such as hosting services or payment processing."
+      ]
+    }
+  },
+
+  "Contact": {
+    "title": "Let’s Start a Conversation",
+    "content": "We're here to help you with any questions or inquiries you may have. Reach out to us, and we’ll get back to you as soon as possible.",
+    "WorkingHours": {
+      "title": "Working hours",
+      "days": "Monday To Friday",
+      "hours": "9:00 AM to 8:00 PM",
+      "additional": "Our Support Team is available 24/7"
+    },
+    "contactUs": "Contact Us",
+    "Form": {
+      "fullName": "Full Name",
+      "email": "Your Email",
+      "reasons": [
+        "Query Related",
+        "Technical Support",
+        "Feedback or Suggestions",
+        "Partnership Opportunities"
+      ],
+      "message": "Message",
+      "button": "Send Message"
+    }
+  },
+
+  "Departments": {
+    "loadingHolder": "Initializing the map",
+    "Germany": {
+      "title": "Department in Germany",
+      "description": "Pariser Platz, 10117 Berlin, Germany"
+    },
+    "Poland": {
+      "title": "Department in Poland",
+      "description": "plac Zamkowy 4, 00-277 Warszawa, Poland"
+    },
+    "UnitedKingdom": {
+      "title": "Department in United Kingdom",
+      "description": "London SW1A 1AA, United Kingdom"
+    }
   }
 }

@@ -10,9 +10,10 @@ import styles from './styles.module.scss';
 
 type NavProps = {
   onNavigate?: VoidFunction;
+  policyVisible?: boolean;
 };
 
-export function Nav({ onNavigate }: NavProps) {
+export function Nav({ onNavigate, policyVisible }: NavProps) {
   const t = useTranslations('Nav');
   const pathname = usePathname();
 
@@ -46,6 +47,15 @@ export function Nav({ onNavigate }: NavProps) {
       >
         {t('contactUs')}
       </Link>
+      {policyVisible && (
+        <Link
+          href={Routes.PrivacyPolicy}
+          className={cn(styles.link, { [styles.active]: pathname === Routes.PrivacyPolicy })}
+          onClick={onNavigate}
+        >
+          {t('privacyPolicy')}
+        </Link>
+      )}
     </nav>
   );
 }

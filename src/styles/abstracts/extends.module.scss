@@ -1,17 +1,28 @@
-%container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 16px;
-}
+@import './variables.module.scss';
 
 %button {
   border: unset;
   font-family: var(--font-sen);
   cursor: pointer;
-  padding: 16px 48px;
+  padding: $spacing-sm $spacing-lg;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
+}
+
+%baseContainer {
+  margin: 0 auto;
+  padding: $spacing-sm;
+}
+
+.containerLg {
+  @extend %baseContainer;
+  max-width: 1440px;
+}
+
+.containerMd {
+  @extend %baseContainer;
+  max-width: 768px;
 }
 
 .body1,

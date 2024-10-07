@@ -1,0 +1,11 @@
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.article {
+  padding: $spacing-md 0;
+
+  & > :not(:first-child) {
+    @extend .body1;
+    margin-top: $spacing-sm;
+  }
+}
