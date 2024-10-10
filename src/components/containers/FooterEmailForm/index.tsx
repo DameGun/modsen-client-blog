@@ -1,13 +1,14 @@
 'use client';
 
-import { SubmitHandler, useForm } from 'react-hook-form';
+import type { SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useTranslations } from 'next-intl';
 
 import { Button, RelativeAlert } from '@/components/ui';
 import { useEmail } from '@/hooks';
-import { FooterContactFormType } from '@/types/contact';
+import type { FooterContactFormType } from '@/types/contact';
 
 import styles from './styles.module.scss';
 import { footerEmailValidationSchema } from './validation';

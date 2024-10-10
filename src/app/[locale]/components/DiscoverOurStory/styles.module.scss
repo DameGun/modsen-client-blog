@@ -1,0 +1,36 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.discoverOurStoryContainer {
+  @extend .sectionContainer;
+  position: relative;
+  height: 100%;
+  min-height: #{$discover-height}px;
+
+  img {
+    height: 100%;
+    width: auto;
+
+    @include tablet-breakpoint(md) {
+      display: none;
+    }
+  }
+}
+
+.discoverOurStoryContent {
+  @include flex-with-options(column, $spacing-md, flex-start, flex-start);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: $color-white;
+  padding: $spacing-lg;
+  max-width: $discover-content-width;
+
+  @include tablet-breakpoint(md) {
+    position: relative;
+    border: 1px solid $color-light-gray;
+    max-width: 100%;
+  }
+}

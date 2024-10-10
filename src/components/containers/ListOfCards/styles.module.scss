@@ -1,0 +1,15 @@
+@use '@/styles/abstracts/mixins' as *;
+@import '@/styles/abstracts/extends.module';
+
+.listOfCardsContainer {
+  @include flex-with-options(column, $spacing-md, center, center);
+  @extend .containerMd;
+
+  .listContainer {
+    @include flex-with-options(row, $spacing-md);
+
+    @include tablet-breakpoint(md) {
+      flex-direction: column;
+    }
+  }
+}

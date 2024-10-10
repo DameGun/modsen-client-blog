@@ -1,0 +1,24 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+
+.authorCardContainer {
+  @include flex-with-options(column, $spacing-sm, center, center);
+  background-color: $color-dark-white;
+  padding: $spacing-md;
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+  transition: $transition-sm;
+
+  .authorAvatar {
+    object-fit: cover;
+    border: 1px solid transparent;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    transition: $transition-sm;
+    background-color: $color-light-pink;
+  }
+}

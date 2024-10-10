@@ -1,0 +1,29 @@
+@use '@/styles/abstracts/mixins' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.homePostsContainer {
+  @include flex-with-options(row, $spacing-xl);
+  @extend .sectionContainer;
+
+  @include tablet-breakpoint {
+    flex-direction: column;
+  }
+
+  .featuredPostContainer {
+    flex: 3;
+  }
+
+  .sectionInnerContainer {
+    @include flex-with-options(column);
+  }
+
+  .headingContainer {
+    @include flex-with-options(row, null, space-between, center);
+    padding-bottom: $spacing-md;
+  }
+
+  .postsListContainer {
+    flex: 2;
+  }
+}

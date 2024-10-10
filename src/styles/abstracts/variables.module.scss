@@ -3,6 +3,7 @@ $spacing-sm: 16px;
 $spacing-md: 26px;
 $spacing-lg: 48px;
 $spacing-xl: 80px;
+$spacing-2xl: 100px;
 
 $z-index-sm: 100;
 $z-index-md: 200;
@@ -13,15 +14,44 @@ $mobile-width: 600px;
 $tablet-lg-width: 1100px;
 $tablet-md-width: 900px;
 
-$icon-size: 26;
+$opacity-sm: 0.7;
+$opacity-md: 0.5;
+$opacity-lg: 0.3;
+
+$image-size-sm: 20;
+$image-size-md: 26;
+$image-size-lg: 48;
+
+$transition-sm: 0.3s;
+$transition-md: 0.5s;
+$transition-lg: 0.7s;
+
+$scale-md: 1.2;
 
 $media-desktop: unquote('(min-width: #{$tablet-lg-width})');
 
 $map-height: 500px;
 
+$author-avatar-size: 128;
+
+$about-us-line-height: 23px;
+
+$discover-content-width: 706px;
+$discover-height: 600;
+$discover-width: 1200;
+
+$carousel-control-size: 50px;
+
+$section-min-height: 300px;
+
 :export {
-  iconSize: $icon-size;
+  imageSizeMd: $image-size-md;
+  imageSizeSm: $image-size-sm;
+  imageSizeLg: $image-size-lg;
   tabletLgWidth: $tablet-lg-width;
   mediaDesktopQuery: $media-desktop;
   mapHeight: $map-height;
+  authorAvatarSize: $author-avatar-size;
+  discoverHeight: $discover-height;
+  discoverWidth: $discover-width;
 }

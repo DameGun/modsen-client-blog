@@ -2,7 +2,7 @@ import { useCallback, useRef, useState } from 'react';
 
 import { BASE_ALERT_RESET_TIME } from '@/constants/alert';
 import { sendEmail } from '@/services/email';
-import { SendEmailProps } from '@/types/contact';
+import type { SendEmailProps } from '@/types/contact';
 
 type EmailHooksProps = {
   resetAfter?: number;

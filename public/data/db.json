@@ -1,0 +1,310 @@
+{
+  "tags": [
+    {
+      "id": 1,
+      "name": "Business"
+    },
+    {
+      "id": 2,
+      "name": "Experience"
+    },
+    {
+      "id": 3,
+      "name": "Technology"
+    },
+    {
+      "id": 4,
+      "name": "Screen"
+    },
+    {
+      "id": 5,
+      "name": "Marketing"
+    },
+    {
+      "id": 6,
+      "name": "Life"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Startup",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARbSURBVHgB7ZpfaFtVHMe/5+a2mjSJDXNtt3U4BekKCi3MontaXF9t7JNgZZmIDyLCBBEn6oOKBREUmSiKdB0q6Ev/2Mfq5suEKRjZwzaVEp11Xdu5Ll3btc29Z7/fye5tmiW09+ZmyYV+4NB7T07b3/f8/t3kRKAIq0szByRkUpOgn9iD6pKSAinNlCN6Q/Nw4Ysi/0YuXdqThT4AKQ+gBqHNTBvCiAeDO9LWnC1g5fp0hxDiJIRsRC0jMSflSrw+3JriWyVA7byp/1bzxluQiKxmdLInNL43ZKD2dz4fgUZdBgbUZXZh9kkpzCH4EcOIa9DMBHyK1ANUKaXogF+hMi9WF6clfIwGn7MloNrouIOc+eUszvx6FucvTOAcjcz8AuZpML093eh/5wicUvEkZgMHvxrB4NcjtrGlOP/7GJxSUQ+w4cc++2ZDw8uhIgLY4Pfe/xxDoz+sm9+1s2ld2HiB5wLYuEPPHVUxbtG172GK75eVAGZodJwEfrFOSHvbA3CDpwKKGb9rZzM++egNlbz95JVIJIzXX31eeaKfRFhEIg1wg2sBwlyEduV7evt2BTLYBjN2UIVNvvFMsq+HjL2OF4+8a89FydijJOLYp2v5wV5yg+s+oE1/C3GVYnz5Isxwh0rYwphneMczBTFviYzm7XrXI3dQgHbtNETmZ3VtbnsCkzNZVW2KwaHD8b03L8aTzyQw+d9lGtPqnsPMrQcch5BYnc2FDiHrtkFG9yNzaaLkek7Y7scfxfB3H6tG1r43J+S1Nz+01/QmDsItjhtZYGpgbfcp7mUjjUAI5/6cUglcqkRyp+3a95AKpxPU1PJ3/8SX/XaFqrgA/S9q95TAjHHfWxA3/oGYG4ex+5UNRRSDy2tvj3sPOM4BoyWZ23lKXHlXK8RCCmL5XwQufoD2B1vUbm62JCb7EmUZz5T9LBT4+20lgGFBm/UEJ7YTsaUo+3FaNnbb15v1hFfGM+77wP/jZDD1gHv2w2w+bM9vJIJDxivj1f9zE0La7CgJGKN8OKzKqJqj3qBdPm6vKQwn5qUXnsahPm8/BHEswDKeGxgP9oS8ezdkqK2kiMmpeeq6YUQb6IPAxQtUADrhFc4bGfUA2/g8TzAcTmrNHD1SUJMz6RmJaW2J0ByJmxhTQg0PBbiuQrd5gnZfdeZQ29ofp93moc39aPcOLsHm9qfgFa6eRm8zvsATDCeyWPpj3e+xODOvanmBYwGljOdrK6EVdfcCtwRILQTJ62PlNa1ilJUDxe4tzOhjCGRO52KeyyyFVyXY+mix2mwJqDb+F0DNPQ2/Iun8mA7MTsGnUPlM0WG8GIRPoQO+YXVOvLo0c7JWT+dLISHT9aHm+1US6zeyz/LhMfwC2Wosm3G+VAJEbEdaSsR9IYK/arCCeDCW+76EXUbrw00pfcXoFOQa1C6nsmRjfawpZU2IYquyy7MJZE06wQefIVf1HJnLvEmVUkAcrwtu/6nw9ZujxSafxI6FmgAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 2,
+      "name": "Business",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALkSURBVHgB7ZpLTBNRFIb/Ox2K5RUQbQMFgy6wrIS4Ma6YsDJBceUCF0QTE41odGPCWhMS98ZEYxAT3ULjVgKuXNqdj4V2A0Ye0cij0s7M8dzbFJEUzPQ1M2m/ZHIf06b3n/vf0ztzRiAPmdTKIIHGNAKX6IG7JEggodkU1xsjs3tPit0NSn3rMaFPgWgQHoQvZtISlhEKdSRzfTsC0hvL/UKIeQhqhZch/CRKG8GmroRsKgHqytv6e88PPgeLMDVrQM6EJtsWBbx/5Xcj0KpTYEpVzc3ViyTsGfgRyzI0aPYIfArpAY6UJPrhVzjMi8zWMsHHaPA5NQFuo8MhHz59waPHr1Q9dvIEop1hRKMR9HG9ubkRlcbxIh46dxWLS8t5z0kBUkgLl1JcX4wFdoQR47JcOBYQOzUMp0Q7I3jxbFLNVqmpyBpYXPqOmfgblAPHa2A3Y5dHMGScUfWbdx9gfX0zb185KX4GeD+7vrGpfH9gX5moyBqQjF8fxfiNUZSamoWqykK3xk7zDcgaqL5bHaWgohYSqc/Q1l5nG1oDi+gCDnXDDvUC9cdAde1wSlECsqOCGqS0y85g8/Xtxd5SgsBH4MdctuvwMOwjF+Do5ytpoduXmv/OwD6YvU/gBNeikN1yFpCWyaxC+/UOheJaFKL287D5kGVRP1/VFiqGUlmoaAFy/z95/47a/+eYfhnH5MOnB35PWkeGTcEC4KaAiXvX/hm8RC7kmfgcPvLd234Evk6gFJTNQv/bRnjGQoXiGQsVSqksVH3PhcpxY57DLuBPrfZs1G1qAtxG441jEn6FOH/MW98F+BSOPglOxotp+BRO8M2qPHEmtTLv1ez8fhAoGWyIHFeLWP9tXpHJY/gFHqu1bRuyqgSIto4kEQxfiJCvGqRhhNqy70vshNFgUzihp60BwVMD77Jg8hiDbeFErkPk+5S5vToC0+YMPmQO2dU8sgzzNkdKAfG8LnT07d7zfwBjb1d22g1BhgAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 3,
+      "name": "Economy",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAxCAYAAACcXioiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMzSURBVHgB7ZpNTBNBFMf/M10wpS2hEqiARvQg8WACB03wRINXgjcTYkTiRQkHj5rIzavRKNEjkBgTuVg48+XFcKM3xYNpgqJAIWiBQtmd58wSGmmXD9td2439JZvdvteP959983a6bwGXw6yMO8nlNgJ1c4LcoxGFJUoMUS5oVPOFIpnOfQIo+b1RhzYIojYUIXIwYwYzwl5vXWzPlhaQWl9qZoxNgVEVihnCGlEqXO4/HVUvTQHmyAtttuiD30OK0LnRos4EV68N8hT/yP8JQ5VGnkHzUN+IXycm3sGNGEaYg4tOuBTSPLJSEmuGW5Flnu1sLhFcDIfLcb0ADQ7DNufAN+Q1x0jKNUpcbitgQh57vDDqe0EnziAfHBXAZMCer0+snWITfG0CRug28sHZFFIjfZjbewH54qwA7pVbhaWLyqpBlVeRL46lEF+fBf8xbKaKFeSz5/JjuwAmA2bxMZnfk4e+TwSvwQ5sFcC25uFZeAnoK1k+0qrlwmvXLlTqyBSyA9sE8NVx8PiIpU8E2yFOdoAvv5UiViGqO2AXtiwl+M8P4ItDWXY1UcWpHlBGtZmYmsGD/qdIJDbStr57Xei724W//m3YAEt+zrIJOUmNs/1ZwStevHqzL3jFgIXtONgiQFS2po9Jlk1RcwOioffAEppIrFvaf+UgwJY5QBVN5rKAbc/bOkGPg22TmPzN5qb4trCIW3ceyv1S2t9QH0Jk5DkCAR/sxJEr8fDrsX3BK5So8ckZ2I0jAg7KcSfIOYU+zn1BZHQiPfEa6mvRfbPT9hQ5ipwEqKD77j/OSpNPUtTAs0f4l+SUQipFMoNX5FIG86X0n7jQlAQUmv9TQCDgN+t+Jhebzpv7K5cvWXzGl7a3h1uz/GqpYfWdR1G6tVhoSgIKjfsFyC5fDG6FZP9YNsym4VJk+YzKZjwbhkuRDb6I2SfeSS5PFWt3/iAIFCuvCJ0zJ7G2pfeo5jHcgozV2BZhdWgKYMG6GBHCrhChHjVIIewN7j4vkS6j5f7aqJYyWpg8NShepnUZY3mwNrpnsHzcRt+Od0IXsoMPdaOnoH1kVeaFrJQMbKjMW/M+0/8buOIvyAKwvy0AAAAASUVORK5CYII="
+    },
+    {
+      "id": 4,
+      "name": "Technology",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAyCAYAAAAayliMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPpSURBVHgB7ZpLaBNBGMf/s9lW2iTFUmx99KCCGA+i4gOfaHzc1FoQDypWEUGxSg8qRFEEHwVRFL0pai168WIrghdL9SJSBaMerAclh/pqfba2tUl2x+9baUjapO3uBjYL+UHYecJ8M9/3zTczAfI4i0hXGOvvWiUhaxQJ+mIqnCUsBcKKLptVb0XT0MoUAWT/56lxqDch5SrkIDSZEU1owaKiSZHBsoQA0T+dc4UQrRByPHIZiV9SRoOFvsowZw0BjJnX1Zc5P/hBSIi4os3jlVA4r0lP7s98MgLjVem5aSTjvd82SaHfgxvRtKACRa+CS5GqhzylFHPhVsjNi1hfp4SLUeBybAvw8dNX7NgdQmDOetSfu5ZSd5byXF695SBCxy+hpfUZso1tFQodv4h791sS+UULZmPK5Aoj3fbiNQnYmdKe6xqv19O3HNnA9gp09/QOy/Oq8G9oHcPl1VsOZG01bK/A23cfUFt32pjpobPLqtX24k3afiV+r9E2MHM67KDCJDyDrOs8uzXbq7AmuBhNd6+gg8pnjTKY6o1rsWb1YpT4vEbe7/fCLqYF2F93Bu006wx/Q4f3JOra2z+ktE1WIR58/ak6tD1/Y0wCw99AoHdUwUfCtAqxV7FC093LeEsChk5cSilno2dVsorpFdixrQqNd5qNNOt8y8Prmdsm2YDf70t7fBpcTauYFuDokT1YtHA2err/YO3qJWPu13i7GSHqy4Jw32R6SNWs2oMtLyRi3zPWyYIyPCJXWX/uamIvYDuo2bYR/hLfsPZW9wXrAmh9UN/XZayWJUuhl21AR1c8xfAzwXbA9mAWyxuZ0PtHru9+Ck/HeVROUA0Drt27dcT2HGr0pNn4RsNz4tjhk7CCpxjKTwohZCxzGxJS+cVtJBau3EwuczpevW5PO1Auiw7EsGLZfJjBVighfWM7Sig/HsDzpQHrls8Ycfd9ZCG8sGfEfe9ITS6MvQMZtlZ5yDDwZBfb8vCGZSO2twLFMyG9Jg505LUUsgsmZ6JRbeJOOpuWwSnsn8jImNldOoXjR0oOR+yok+lQwg5yXCXZTcBIczjCwVHtvq2wQ1ZuJcRv2rS+NozajlUt2+qWv5VwmuwIUDA2NyoLsu9u8zdzTpMXwGnyAjiNQjcdEbgVSe/HFI48hksh/x+mx3hxCy6FHviajLuyWH9Xa66+zmdCQkYKiyumGUas/o3v4sdjuAUaqzagBzlpCCBKJ0Xo5iPoCiH4rwZRBItK//9fIuFGC33lYTWqzRO0NMhdHsdpjIWl5eHBgrR/t4kPfKtCXKcXfPCVg6PvyOzmdfKUAqKhoGjCk6H1/wBfqpXAIrgKmwAAAABJRU5ErkJggg=="
+    }
+  ],
+  "posts": [
+    {
+      "id": "b2bc380b-c1e0-4103-a5ca-c7ccc3f4ce7b",
+      "title": "The Future of Technology",
+      "authorId": "98f452c4-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-01-10T10:30:00Z",
+      "categoryId": 4,
+      "image": "https://images.pexels.com/photos/7413915/pexels-photo-7413915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "tagsIds": [1, 3],
+      "featuredOnPage": "home-banner",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "Exploring the Latest Tech Trends",
+          "paragraph": "Technology is rapidly transforming every aspect of our lives, from the way we work to how we communicate. With advancements in AI, machine learning, and blockchain, we are entering an era where automation will not only enhance productivity but redefine the very essence of work. This technological shift is also raising important questions about the future of jobs, privacy, and digital security. For businesses, staying ahead means adapting to these trends and integrating them into their long-term strategies."
+        },
+        {
+          "title": "The Impact of Quantum Computing",
+          "paragraph": "Quantum computing is no longer a theoretical concept but a fast-approaching reality. With the potential to solve complex problems that are currently beyond the reach of classical computers, quantum computing could revolutionize fields such as cryptography, pharmaceuticals, and materials science. However, alongside these breakthroughs come challenges, particularly in ensuring the security of data as traditional encryption methods become obsolete."
+        }
+      ]
+    },
+    {
+      "id": "98ad4c7b-fd9b-4139-91ed-9a0df6995d1f",
+      "title": "Marketing Strategies for 2024",
+      "authorId": "bce68222-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-02-05T14:20:00Z",
+      "categoryId": 2,
+      "image": "https://example.com/images/marketing1.jpg",
+      "tagsIds": [4],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "Innovative Approaches in Digital Marketing",
+          "paragraph": "As consumer behavior continues to evolve, so must marketing strategies. Personalization and data-driven approaches are becoming more essential than ever. Marketers are using AI-powered tools to analyze user behavior and deliver tailored experiences. This shift is not just about targeting, but about creating meaningful connections with consumers by delivering the right content at the right time. Successful campaigns will leverage automation to reduce costs while enhancing engagement."
+        },
+        {
+          "title": "The Role of Influencers in Modern Marketing",
+          "paragraph": "Influencer marketing is no longer just a trend; it’s a cornerstone of modern digital strategies. Brands are increasingly relying on influencers to promote products to highly targeted audiences. In 2024, the focus will shift toward micro-influencers, who, despite having smaller followings, tend to have higher engagement rates. Authenticity and trustworthiness will become even more critical, as consumers grow increasingly wary of sponsored content."
+        }
+      ]
+    },
+    {
+      "id": "2a0543b2-c9c3-4714-b94d-5871dd5710f8",
+      "title": "Balancing Work and Life in the Modern World",
+      "authorId": "e6a04134-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-03-15T08:00:00Z",
+      "categoryId": 2,
+      "image": "https://images.pexels.com/photos/16592498/pexels-photo-16592498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "tagsIds": [1, 5],
+      "featuredOnPage": "home-list",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "The Importance of Work-Life Balance",
+          "paragraph": "With the lines between work and personal life increasingly blurred, achieving a healthy balance is crucial. Remote work, while offering flexibility, has also led to longer working hours for many. Finding a balance requires clear boundaries and a commitment to self-care. Strategies such as time blocking, taking regular breaks, and prioritizing personal well-being can help individuals maintain productivity without burning out. Companies must also recognize the need for flexible working conditions that respect the mental health of employees."
+        }
+      ]
+    },
+    {
+      "id": "e747d162-350d-45b9-a8bc-1494587bb95b",
+      "title": "The Key to Business Success in 2024",
+      "authorId": "e6a04134-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-01-25T16:45:00Z",
+      "categoryId": 2,
+      "image": "https://example.com/images/business1.jpg",
+      "tagsIds": [2],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "Leadership in a Digital Age",
+          "paragraph": "Effective leadership in the 21st century requires a deep understanding of both digital tools and the human element. As businesses become more reliant on technology, leaders must balance the use of digital innovation with strong interpersonal skills. The best leaders will foster a culture of collaboration and continuous learning, ensuring their teams are equipped to adapt to rapid changes. In a world where disruption is the norm, agility is key."
+        },
+        {
+          "title": "Scaling a Start-Up",
+          "paragraph": "Scaling a business is one of the most challenging phases for any start-up. It requires not only financial resources but also a solid operational foundation. Start-up founders must focus on building a scalable infrastructure early on, from automating processes to establishing a strong brand presence. Equally important is the ability to attract and retain top talent who can drive the company’s growth."
+        }
+      ]
+    },
+    {
+      "id": "ef8f6589-7936-4fd1-9774-8431ed93fbe1",
+      "title": "The Screen Dilemma: Managing Screen Time in a Digital World",
+      "authorId": "f9c3c8a4-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-04-03T12:10:00Z",
+      "categoryId": 1,
+      "image": "https://example.com/images/screen1.jpg",
+      "tagsIds": [2, 6],
+      "featuredOnPage": "blog",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "The Effects of Screen Time on Mental Health",
+          "paragraph": "In the age of smartphones, computers, and constant connectivity, managing screen time has become a significant concern, particularly for mental health. Excessive screen time, especially on social media, has been linked to increased levels of anxiety, depression, and loneliness. Experts suggest that taking regular breaks, limiting exposure to social media, and engaging in offline activities can mitigate these effects. Parents are also advised to monitor and set healthy screen time limits for children."
+        }
+      ]
+    },
+    {
+      "id": "c64fee13-1a72-49f2-96f4-51825360e6cf",
+      "title": "Artificial Intelligence: From Concept to Reality",
+      "authorId": "f9c3c8a4-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-05-12T11:30:00Z",
+      "categoryId": 4,
+      "image": "https://example.com/images/ai1.jpg",
+      "tagsIds": [3, 4],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "AI’s Impact on Everyday Life",
+          "paragraph": "Artificial Intelligence is no longer a distant future technology. Today, AI-driven applications are integrated into every aspect of daily life, from personalized shopping recommendations to virtual assistants that can manage household devices. Businesses are also leveraging AI to streamline operations, improve customer service, and enhance decision-making processes. However, as AI becomes more ubiquitous, concerns about data privacy and ethical AI use are coming to the forefront."
+        }
+      ]
+    },
+    {
+      "id": "7a346867-9564-4372-999b-c90dbd760756",
+      "title": "Harnessing the Power of Data in Business",
+      "authorId": "98f452c4-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-06-01T09:15:00Z",
+      "categoryId": 1,
+      "image": "https://example.com/images/business2.jpg",
+      "tagsIds": [4, 6],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "Why Data-Driven Decision Making Matters",
+          "paragraph": "In today’s competitive business environment, companies that leverage data for decision-making have a significant advantage. By analyzing consumer behavior, market trends, and operational performance, businesses can make more informed decisions that lead to greater efficiency and profitability. Data is now seen as a strategic asset, and organizations that invest in data analytics are positioning themselves for long-term success."
+        }
+      ]
+    },
+    {
+      "id": "f80b050b-911c-49ce-864b-3329fed27f09",
+      "title": "Experiences in Remote Work",
+      "authorId": "f9c3c8a4-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-07-10T08:00:00Z",
+      "categoryId": 3,
+      "image": "https://example.com/images/remote1.jpg",
+      "tagsIds": [6],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "Challenges and Opportunities of Remote Work",
+          "paragraph": "Remote work has become a defining feature of the modern workplace. While it offers flexibility and a better work-life balance for many employees, it also presents unique challenges. Maintaining productivity, fostering team collaboration, and setting clear boundaries between work and personal life can be difficult in a remote setting. Employers and workers alike must develop strategies to overcome these challenges and embrace the opportunities that remote work provides."
+        }
+      ]
+    },
+    {
+      "id": "1bbbcef7-39a6-4c56-bc62-4fdbc03e9915",
+      "title": "Screen Addiction: A Growing Concern",
+      "authorId": "e6a04134-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-08-05T11:50:00Z",
+      "categoryId": 4,
+      "image": "https://example.com/images/screen2.jpg",
+      "tagsIds": [1, 6],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "Understanding the Impact of Screen Addiction",
+          "paragraph": "With the proliferation of smartphones, tablets, and computers, screen addiction is becoming an increasing concern, particularly among younger generations. Continuous exposure to digital screens can lead to problems such as insomnia, decreased attention span, and social withdrawal. Addressing this issue requires awareness, discipline, and the establishment of screen-free time, especially during critical moments like meals or family gatherings."
+        }
+      ]
+    },
+    {
+      "id": "8d8ee034-3230-4459-9766-374a78afe476",
+      "title": "Marketing Automation in 2024",
+      "authorId": "bce68222-5a8e-11ec-bf63-0242ac130002",
+      "createdAt": "2024-09-15T10:00:00Z",
+      "categoryId": 3,
+      "image": "https://example.com/images/marketing2.jpg",
+      "tagsIds": [2, 3],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "content": [
+        {
+          "title": "Leveraging Automation to Enhance Campaigns",
+          "paragraph": "Marketing automation has become a critical tool for businesses aiming to scale their marketing efforts efficiently. By using automated workflows, companies can nurture leads, personalize customer experiences, and measure the success of their campaigns with greater precision. In 2024, we’ll see further advancements in AI-driven automation tools, allowing for more sophisticated targeting and content personalization."
+        }
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": "98f452c4-5a8e-11ec-bf63-0242ac130002",
+      "name": "John Doe",
+      "bio": "A seasoned technology writer with a passion for AI, blockchain, and quantum computing.",
+      "image": "https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "socials": {
+        "facebook": "https://facebook.com/johndoe",
+        "twitter": "https://twitter.com/johndoe",
+        "linkedIn": "https://linkedin.com/in/johndoe"
+      }
+    },
+    {
+      "id": "bce68222-5a8e-11ec-bf63-0242ac130002",
+      "name": "Jane Smith",
+      "bio": "Marketing expert with over a decade of experience in digital marketing and advertising strategies.",
+      "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "socials": {
+        "twitter": "https://twitter.com/janesmith",
+        "instagram": "https://instagram.com/jane_smith"
+      }
+    },
+    {
+      "id": "e6a04134-5a8e-11ec-bf63-0242ac130002",
+      "name": "Michelle Williams",
+      "bio": "Business consultant and writer specializing in leadership, scaling startups, and entrepreneurship.",
+      "image": "https://images.pexels.com/photos/5704849/pexels-photo-5704849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "socials": {
+        "linkedIn": "https://linkedin.com/in/michaelwilliams"
+      }
+    },
+    {
+      "id": "f9c3c8a4-5a8e-11ec-bf63-0242ac130002",
+      "name": "Laura Brown",
+      "bio": "Health and wellness writer dedicated to exploring the effects of modern technology on mental health.",
+      "image": "https://images.pexels.com/photos/6205509/pexels-photo-6205509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "socials": {
+        "twitter": "https://twitter.com/laurabrown",
+        "instagram": "https://instagram.com/laura_brown"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "c9b451a2-1e44-4a93-9e11-7c5d5c841b3d",
+      "name": "Michael Jackson",
+      "address": "New York, USA",
+      "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "Oh, I absolutely love your blog! The content is always so insightful and engaging. Keep up the great work!"
+    },
+    {
+      "id": "7a21bdf2-4b8d-46ef-8f15-3fa144af64fd",
+      "name": "Sarah Johnson",
+      "address": "London, UK",
+      "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "I’m really impressed with the depth of your posts. Every article brings something new and refreshing. Fantastic blog!"
+    },
+    {
+      "id": "e6c15f30-2d23-4ae4-8b22-949e9f5f2e61",
+      "name": "David Lee",
+      "address": "Sydney, Australia",
+      "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "This blog has quickly become my go-to for inspiration. The writing is clear, and the topics are always relevant."
+    },
+    {
+      "id": "f9a3e7b2-9b4a-4cf0-81e6-f2b9d3b49b38",
+      "name": "Maria Garcia",
+      "address": "Toronto, Canada",
+      "image": "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "I love how each post feels so well-researched and thought-provoking. It’s always a pleasure to read your blog!"
+    },
+    {
+      "id": "d4b5d9c4-ef2b-4d68-b4e5-59f7a2dfd835",
+      "name": "John Smith",
+      "address": "Los Angeles, USA",
+      "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "Your blog is simply amazing! The variety of topics and the depth you go into really set it apart from others."
+    }
+  ]
+}

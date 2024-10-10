@@ -15,8 +15,17 @@
 
   &.isDisabled,
   &.isLoading {
-    opacity: 0.6;
+    opacity: $opacity-sm;
     pointer-events: none;
+  }
+}
+
+.primary,
+.secondary {
+  transition: $transition-sm;
+
+  &:hover {
+    transition: $transition-sm;
   }
 }
 
@@ -32,6 +41,6 @@
   background-color: $color-white;
 
   &:hover {
-    opacity: 0.8;
+    opacity: $opacity-sm;
   }
 }

@@ -1,0 +1,17 @@
+@import '@/styles/abstracts/variables.module';
+
+.reveal {
+  min-height: $section-min-height;
+}
+
+.revealAnimation {
+  @keyframes reveal {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  animation: reveal 1s;
+}

@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
         <h1>{t('title')}</h1>
         <p className={extendsStyles.body1}>{t('lastUpdatedAt')}</p>
       </SectionHeader>
-      <section className={extendsStyles.containerMd}>
+      <section className={extendsStyles.containerSm}>
         <Article>
           <h1>{t('Introduction.title')}</h1>
           <p>{t('Introduction.content')}</p>

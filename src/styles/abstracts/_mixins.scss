@@ -67,8 +67,8 @@
   &::after {
     content: '';
     position: absolute;
-    width: #{$icon-size}px;
-    height: #{$icon-size}px;
+    width: #{$image-size-md}px;
+    height: #{$image-size-md}px;
     top: 0;
     left: 0;
     right: 0;

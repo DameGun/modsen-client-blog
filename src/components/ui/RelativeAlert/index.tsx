@@ -28,8 +28,8 @@ export function RelativeAlert({
           <Image
             src={errorIcon}
             alt='Error Icon'
-            width={parseStylesVariableAsNumber(variables.iconSize)}
-            height={parseStylesVariableAsNumber(variables.iconSize)}
+            width={parseStylesVariableAsNumber(variables.imageSizeMd)}
+            height={parseStylesVariableAsNumber(variables.imageSizeMd)}
           />
           {!minimize && <h5>{errorMessage}</h5>}
         </>
@@ -39,8 +39,8 @@ export function RelativeAlert({
           <Image
             src={successIcon}
             alt='Success Icon'
-            width={parseStylesVariableAsNumber(variables.iconSize)}
-            height={parseStylesVariableAsNumber(variables.iconSize)}
+            width={parseStylesVariableAsNumber(variables.imageSizeMd)}
+            height={parseStylesVariableAsNumber(variables.imageSizeMd)}
           />
           {!minimize && <h5>{successMessage}</h5>}
         </>
