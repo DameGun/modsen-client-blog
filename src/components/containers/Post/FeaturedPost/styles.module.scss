@@ -46,7 +46,7 @@
       @include flex-with-options(row, $spacing-xs, center, center);
       text-align: center;
 
-      .authorName {
+      a {
         color: $color-dark-yellow;
 
         &:hover {

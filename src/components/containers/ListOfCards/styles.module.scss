@@ -5,6 +5,18 @@
   @include flex-with-options(column, $spacing-md, center, center);
   @extend .containerMd;
 
+  .start {
+    align-self: flex-start;
+  }
+
+  .center {
+    align-self: center;
+  }
+
+  .end {
+    align-self: flex-end;
+  }
+
   .listContainer {
     @include flex-with-options(row, $spacing-md);
 

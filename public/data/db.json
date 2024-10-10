@@ -79,7 +79,7 @@
       "authorId": "bce68222-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-02-05T14:20:00Z",
       "categoryId": 2,
-      "image": "https://example.com/images/marketing1.jpg",
+      "image": "https://images.pexels.com/photos/2182981/pexels-photo-2182981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [4],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "content": [
@@ -116,7 +116,7 @@
       "authorId": "e6a04134-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-01-25T16:45:00Z",
       "categoryId": 2,
-      "image": "https://example.com/images/business1.jpg",
+      "image": "https://images.pexels.com/photos/2068664/pexels-photo-2068664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [2],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "content": [
@@ -136,7 +136,7 @@
       "authorId": "f9c3c8a4-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-04-03T12:10:00Z",
       "categoryId": 1,
-      "image": "https://example.com/images/screen1.jpg",
+      "image": "https://images.pexels.com/photos/7350906/pexels-photo-7350906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [2, 6],
       "featuredOnPage": "blog",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
@@ -153,7 +153,7 @@
       "authorId": "f9c3c8a4-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-05-12T11:30:00Z",
       "categoryId": 4,
-      "image": "https://example.com/images/ai1.jpg",
+      "image": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [3, 4],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "content": [
@@ -169,7 +169,7 @@
       "authorId": "98f452c4-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-06-01T09:15:00Z",
       "categoryId": 1,
-      "image": "https://example.com/images/business2.jpg",
+      "image": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [4, 6],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "content": [
@@ -185,7 +185,7 @@
       "authorId": "f9c3c8a4-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-07-10T08:00:00Z",
       "categoryId": 3,
-      "image": "https://example.com/images/remote1.jpg",
+      "image": "https://images.pexels.com/photos/19537510/pexels-photo-19537510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [6],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "content": [
@@ -201,7 +201,7 @@
       "authorId": "e6a04134-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-08-05T11:50:00Z",
       "categoryId": 4,
-      "image": "https://example.com/images/screen2.jpg",
+      "image": "https://images.pexels.com/photos/9784250/pexels-photo-9784250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [1, 6],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "content": [
@@ -217,7 +217,7 @@
       "authorId": "bce68222-5a8e-11ec-bf63-0242ac130002",
       "createdAt": "2024-09-15T10:00:00Z",
       "categoryId": 3,
-      "image": "https://example.com/images/marketing2.jpg",
+      "image": "https://images.pexels.com/photos/17781647/pexels-photo-17781647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "tagsIds": [2, 3],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. LLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "content": [

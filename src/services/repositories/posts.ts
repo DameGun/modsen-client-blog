@@ -1,16 +1,29 @@
+import { POSTS_LENGTH_LIMIT } from '@/constants/post';
+import type { PaginationMetadata, PaginationQueryParams } from '@/types/api';
 import type { PostType } from '@/types/post';
 import { mapPostData } from '@/utils/mappings';
 
 import { databaseInstance } from '../database';
 
 export class PostsRepository {
-  static getPosts(limit?: number) {
-    let data = databaseInstance.posts;
+  static getPosts({ limit = POSTS_LENGTH_LIMIT, page = 0 }: PaginationQueryParams = {}) {
+    const data = databaseInstance.posts;
 
-    if (limit) data = data.slice(0, 4);
-    const posts: PostType[] = data.map((post) => mapPostData(post));
+    const totalCount = data.length;
+    const startIndex = page * limit;
+    const endIndex = startIndex + limit;
 
-    return posts;
+    const posts: PostType[] = data.slice(startIndex, endIndex).map((post) => mapPostData(post));
+    const response: PaginationMetadata<PostType> = {
+      totalCount,
+      page,
+      data: posts,
+      perPage: limit,
+      pageCount: Math.floor(totalCount / limit),
+      hasMore: endIndex < totalCount - 1,
+    };
+
+    return response;
   }
 
   static getPostById(postId: string) {

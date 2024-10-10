@@ -3,17 +3,9 @@
 @import '@/styles/abstracts/variables.module';
 @import '@/styles/abstracts/extends.module';
 
-.postContainer {
+.extendedPostContainer {
   @include flex-with-options(column, $spacing-sm, flex-start, flex-start);
-  padding: $spacing-md;
-}
+  @extend .postContainer;
 
-.minified {
-  cursor: pointer;
-  transition: $transition-sm;
-
-  &:hover {
-    transition: $transition-sm;
-    background-color: $color-dark-white;
-  }
+  border: 1px solid $color-light-gray;
 }

@@ -19,5 +19,5 @@ export const DynamicComponents = [
     id: 'Testimonials',
     Component: dynamic(() => import('@/app/[locale]/components/Testimonials')),
   },
-  { id: 'JoinNow', Component: dynamic(() => import('@/app/[locale]/components/JoinNow')) },
+  { id: 'JoinNow', Component: dynamic(() => import('@/components/containers/JoinNow')) },
 ] as const;

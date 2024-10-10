@@ -1,0 +1,39 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.defaultPostContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  column-gap: $spacing-md;
+  @extend .postContainer;
+
+  @include mobile-breakpoint {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .defaultPostContentContainer {
+    @include flex-with-options(column, $spacing-sm);
+
+    .categoryName {
+      text-transform: uppercase;
+      color: $color-purple;
+      font-weight: bold;
+    }
+
+    .description {
+      @extend .body1Gray;
+    }
+  }
+
+  cursor: pointer;
+  transition: $transition-sm;
+
+  &:hover {
+    transition: $transition-sm;
+    background-color: $color-dark-white;
+  }
+}

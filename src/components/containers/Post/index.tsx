@@ -1,59 +1,41 @@
 'use client';
 
-import type { MouseEvent } from 'react';
+import { useCallback } from 'react';
 
-import cn from 'classnames';
-import Image from 'next/image';
-import { useTranslations } from 'next-intl';
-
-import { Button } from '@/components/ui';
-import { PostImageSize, PostVariant } from '@/constants/post';
+import { PostVariant } from '@/constants/post';
 import { Routes } from '@/constants/routes';
-import { Link, useRouter } from '@/i18n/routing';
-import extendsVariables from '@/styles/abstracts/extends.module.scss';
+import { useRouter } from '@/i18n/routing';
 import type { PropsWithPost } from '@/types/post';
 
-import styles from './styles.module.scss';
+import { DefaultPost } from './DefaultPost';
+import { ExtendedPost } from './ExtendedPost';
+import { FeaturedPost } from './FeaturedPost';
+import { MinifiedPost } from './MinifiedPost';
 
 type PostProps = PropsWithPost & {
   variant?: PostVariant;
 };
 
-export function Post({
-  variant = PostVariant.Extended,
-  post: { id, image, author, createdAt, title, description },
-}: PostProps) {
+export function Post({ variant = PostVariant.Default, post }: PostProps) {
   const router = useRouter();
-  const t = useTranslations('Post');
 
-  const handlePostClick = () => {
+  const handlePostClick = useCallback(() => {
+    const { author, id } = post;
     router.push(Routes.Post(author.id, id));
-  };
+  }, [post, router]);
 
-  const handleAuthorNameClick = (e: MouseEvent) => e.stopPropagation();
-
-  return (
-    <div
-      className={cn(styles.postContainer, styles[variant])}
-      onClick={variant !== PostVariant.Featured ? handlePostClick : undefined}
-    >
-      {variant !== PostVariant.Minified && (
-        <Image src={image} {...PostImageSize[variant]} alt='Post Image' />
-      )}
-      <p className={extendsVariables.label}>
-        {t('info')}&nbsp;
-        <Link href={Routes.Author(author.id)} onClick={handleAuthorNameClick}>
-          {author.name}
-        </Link>
-        &nbsp; | {createdAt}
-      </p>
-      <h3>{title}</h3>
-      {variant !== PostVariant.Minified && (
-        <p className={extendsVariables.body1Gray}>{description}</p>
-      )}
-      {variant === PostVariant.Featured && (
-        <Button onClick={handlePostClick}>{t('Featured.button')}</Button>
-      )}
-    </div>
-  );
+  switch (variant) {
+    case PostVariant.Extended: {
+      return <ExtendedPost post={post} handleClick={handlePostClick} />;
+    }
+    case PostVariant.Minified: {
+      return <MinifiedPost post={post} handleClick={handlePostClick} />;
+    }
+    case PostVariant.Featured: {
+      return <FeaturedPost post={post} handleClick={handlePostClick} />;
+    }
+    default: {
+      return <DefaultPost post={post} handleClick={handlePostClick} />;
+    }
+  }
 }
