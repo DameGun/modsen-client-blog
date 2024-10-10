@@ -1,13 +1,13 @@
 import { getTranslations } from 'next-intl/server';
 
 import { Carousel } from '@/components/containers/Carousel';
-import { getReviews } from '@/services/api';
+import { ReviewsRepository } from '@/services/repositories/reviews';
 import extendsVariables from '@/styles/abstracts/extends.module.scss';
 
 import styles from './styles.module.scss';
 
 export default async function Testimonials() {
-  const reviews = await getReviews();
+  const reviews = ReviewsRepository.getReviews();
   const t = await getTranslations('Home.Testimonials');
 
   return (

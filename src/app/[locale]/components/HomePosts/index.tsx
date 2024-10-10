@@ -4,13 +4,13 @@ import { Post } from '@/components/containers/Post';
 import { PostVariant } from '@/constants/post';
 import { Routes } from '@/constants/routes';
 import { Link } from '@/i18n/routing';
-import { getFeaturedPost, getPosts } from '@/services/api';
+import { PostsRepository } from '@/services/repositories/posts';
 
 import styles from './styles.module.scss';
 
 export default async function HomePosts() {
-  const featuredPost = await getFeaturedPost('home-list');
-  const posts = await getPosts(4);
+  const featuredPost = PostsRepository.getFeaturedPost('home-list');
+  const posts = PostsRepository.getPosts(4);
   const t = await getTranslations('Home.Posts');
 
   return (

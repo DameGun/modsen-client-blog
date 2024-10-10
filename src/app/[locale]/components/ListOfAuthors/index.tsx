@@ -2,10 +2,10 @@ import { getTranslations } from 'next-intl/server';
 
 import { AuthorCard } from '@/components/containers/AuthorCard';
 import { ListOfCards } from '@/components/containers/ListOfCards';
-import { getAuthors } from '@/services/api';
+import { AuthorsRepository } from '@/services/repositories/authors';
 
 export default async function ListOfAuthors() {
-  const authors = await getAuthors();
+  const authors = AuthorsRepository.getAuthors();
   const t = await getTranslations('Home.Authors');
 
   return (
