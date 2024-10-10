@@ -1,6 +1,7 @@
 @use '@/styles/abstracts/mixins' as *;
 @use '@/styles/abstracts/colors' as *;
 @import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
 
 .carouselContainer {
   @include flex-with-options(column, $spacing-2xl);
@@ -16,10 +17,9 @@
 
     .personDataContainer {
       @include flex-with-options(row, $spacing-sm);
+
       .personImage {
-        object-fit: cover;
-        border: 1px solid transparent;
-        border-radius: 50%;
+        @extend .roundAvatar;
       }
     }
 

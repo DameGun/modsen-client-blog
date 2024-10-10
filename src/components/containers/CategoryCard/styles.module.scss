@@ -2,7 +2,7 @@
 @use '@/styles/abstracts/colors' as *;
 
 .categoryCardContainer {
-  @include flex-with-options(column, $spacing-md, null, flex-start);
+  @include flex-with-options(column, $spacing-md);
   flex: 1;
   border: 1px solid $color-light-gray;
   cursor: pointer;
@@ -15,6 +15,15 @@
   }
 }
 
-.minified {
+.minified,
+.label {
   flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  border: none;
+  gap: $spacing-xs;
+  padding: 0;
+  pointer-events: none;
 }

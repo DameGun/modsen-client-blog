@@ -1,0 +1,10 @@
+@import '@/styles/abstracts/variables.module';
+
+.blogPostImageContainer {
+  position: relative;
+  height: $blog-post-image-height;
+
+  img {
+    object-fit: cover;
+  }
+}
