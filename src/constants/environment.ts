@@ -6,5 +6,5 @@ export const MAPBOX_PUBLIC_KEY = process.env.NEXT_PUBLIC_MAPBOX_API_KEY;
 
 export const API_URL =
   process.env.NODE_ENV === 'production'
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL ?? process.env.VERCEL_URL}`
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL ?? process.env.VERCEL_URL}/api`
     : process.env.NEXT_PUBLIC_API_URL;
