@@ -202,5 +202,10 @@
       "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
       "content": "Bitte beachten Sie, dass dies ein sehr wichtiger Aspekt ist, aber ich gebe ihm die gleichen vorübergehenden Auswirkungen wie harte Arbeit und Fettleibigkeit. Damit es auf ein Minimum reduziert wird, arbeitet jeder unserer Routinelamko nur, um die Ziele der Bequemlichkeit des Rezepts zu erreichen. Ich schwöre, ich hatte Schmerzen, als ich weggelaufen bin."
     }
+  },
+
+  "LocaleSwitcher": {
+    "en": "English",
+    "de": "Deutsch"
   }
 }

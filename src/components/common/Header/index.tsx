@@ -6,6 +6,7 @@ import cn from 'classnames';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
+import { LocaleSwitcher } from '@/components/containers/LocaleSwitcher';
 import { Button } from '@/components/ui';
 import { useDisableTransition, useMediaQuery } from '@/hooks';
 import closeIcon from '@/public/icons/close-icon.svg';
@@ -42,6 +43,7 @@ export function Header() {
         >
           <Nav onNavigate={handleClose} />
           <Button variant='secondary'>{t('videoButton')}</Button>
+          <LocaleSwitcher />
         </div>
         <Image
           className={cn(styles.menuButton, { [styles.isVisible]: isOpen })}
