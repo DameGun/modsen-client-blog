@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { CategoryCard } from '@/components/containers/CategoryCard';
 import { CategoryVariant } from '@/constants/category';
@@ -14,6 +15,8 @@ import styles from './styles.module.scss';
 type BlogPostHeaderProps = Pick<PostType, 'id' | 'author' | 'title' | 'createdAt' | 'category'>;
 
 export function BlogPostHeader({ id, author, title, createdAt, category }: BlogPostHeaderProps) {
+  const t = useTranslations('BlogPost');
+
   return (
     <div className={styles.blogPostHeaderContainer}>
       <div className={styles.authorInfo}>
@@ -27,7 +30,7 @@ export function BlogPostHeader({ id, author, title, createdAt, category }: BlogP
           <Link href={Routes.Author(id)}>
             <h3 className={styles.authorName}>{author.name}</h3>
           </Link>
-          <p className={extendsVariables.body1Gray}>Posted on {createdAt}</p>
+          <p className={extendsVariables.body1Gray}>{t('createdAt', { createdAt })}</p>
         </span>
       </div>
       <h1>{title}</h1>

@@ -163,6 +163,13 @@
     }
   },
 
+  "BlogPost": {
+    "createdAt": "Posted on {createdAt}",
+    "RelatedPosts": {
+      "title": "What to read next"
+    }
+  },
+
   "AboutUs": {
     "Header": {
       "label": "About Us",
