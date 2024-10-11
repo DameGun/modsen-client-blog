@@ -149,11 +149,14 @@
     }
   },
 
+  "Pagination": {
+    "prevButton": "< Prev",
+    "nextButton": "Next >"
+  },
+
   "Blog": {
     "Posts": {
-      "title": "All Posts",
-      "prevButton": "< Prev",
-      "nextButton": "Next >"
+      "title": "All Posts"
     },
     "Categories": {
       "title": "All Categories"
@@ -207,5 +210,10 @@
   "LocaleSwitcher": {
     "en": "English",
     "de": "Deutsch"
+  },
+
+  "Author": {
+    "title": "Hi there, I'm {name} and welcome to my Blog",
+    "posts": "My Posts"
   }
 }

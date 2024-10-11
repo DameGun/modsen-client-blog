@@ -1,26 +1,23 @@
-import { POSTS_LENGTH_LIMIT } from '@/constants/post';
 import type { PaginationMetadata, PaginationQueryParams } from '@/types/api';
 import type { PostType } from '@/types/post';
 import { mapPostData } from '@/utils/mappings';
+import { getPaginationMetadata } from '@/utils/pagination';
 
 import { databaseInstance } from '../database';
 
 export class PostsRepository {
-  static getPosts({ limit = POSTS_LENGTH_LIMIT, page = 0 }: PaginationQueryParams = {}) {
+  static getPosts(params?: PaginationQueryParams) {
     const data = databaseInstance.posts;
 
-    const totalCount = data.length;
-    const startIndex = page * limit;
-    const endIndex = startIndex + limit;
+    const { startIndex, endIndex, ...metadata } = getPaginationMetadata<PostType>(
+      params,
+      data.length
+    );
 
     const posts: PostType[] = data.slice(startIndex, endIndex).map((post) => mapPostData(post));
     const response: PaginationMetadata<PostType> = {
-      totalCount,
-      page,
+      ...metadata,
       data: posts,
-      perPage: limit,
-      pageCount: Math.floor(totalCount / limit),
-      hasMore: endIndex < totalCount - 1,
     };
 
     return response;
@@ -33,11 +30,21 @@ export class PostsRepository {
     return post;
   }
 
-  static getPostsByAuthorId(id: string) {
+  static getPostsByAuthorId(id: string, params?: PaginationQueryParams) {
     const data = databaseInstance.posts.filter(({ authorId }) => authorId === id)!;
-    const posts: PostType[] = data.map((post) => mapPostData(post));
 
-    return posts;
+    const { startIndex, endIndex, ...metadata } = getPaginationMetadata<PostType>(
+      params,
+      data.length
+    );
+
+    const posts: PostType[] = data.slice(startIndex, endIndex).map((post) => mapPostData(post));
+    const response: PaginationMetadata<PostType> = {
+      ...metadata,
+      data: posts,
+    };
+
+    return response;
   }
 
   static getFeaturedPost(page: string) {
