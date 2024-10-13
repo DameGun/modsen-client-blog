@@ -2,8 +2,8 @@ import { POSTS_LENGTH_LIMIT } from '@/constants/post';
 import type { PaginationMetadataExtended, PaginationQueryParams } from '@/types/api';
 
 export const getPaginationMetadata = <T>(
-  { limit = POSTS_LENGTH_LIMIT, page = 0 }: PaginationQueryParams = {},
-  length: number
+  length: number,
+  { limit = POSTS_LENGTH_LIMIT, page = 0 }: PaginationQueryParams = {}
 ): PaginationMetadataExtended<T> => {
   const totalCount = length;
   const startIndex = page * limit;

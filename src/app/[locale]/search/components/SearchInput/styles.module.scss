@@ -1,0 +1,12 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.searchInputContainer {
+  @include flex-with-options(row, $spacing-xs);
+
+  input {
+    width: 100%;
+  }
+}

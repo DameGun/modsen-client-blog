@@ -1,0 +1,9 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.searchBarContainer {
+  @include flex-with-options(column, $spacing-lg);
+  margin-top: $spacing-2xl;
+}

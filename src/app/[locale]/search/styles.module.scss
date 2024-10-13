@@ -1,0 +1,25 @@
+@use '@/styles/abstracts/mixins' as *;
+@import '@/styles/abstracts/extends.module';
+@import '@/styles/abstracts/variables.module';
+
+.searchPageContainer {
+  @extend .containerLg;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  column-gap: $spacing-lg;
+
+  @include tablet-breakpoint(md) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 0;
+
+    & > :first-child {
+      order: 1;
+    }
+
+    & > :last-child {
+      order: -1;
+    }
+  }
+}

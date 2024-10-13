@@ -8,4 +8,8 @@ export class CategoriesRepository {
   static getCategoryById(categoryId: number) {
     return databaseInstance.categories.find(({ id }) => id === categoryId);
   }
+
+  static getCategoryByName(categoryName: string) {
+    return databaseInstance.categories.find(({ name }) => name === categoryName)!;
+  }
 }

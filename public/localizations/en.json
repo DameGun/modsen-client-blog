@@ -2,6 +2,7 @@
   "Nav": {
     "home": "Home",
     "blog": "Blog",
+    "search": "Search",
     "aboutUs": "About Us",
     "contactUs": "Contact Us",
     "privacyPolicy": "Privacy Policy"
@@ -222,5 +223,28 @@
   "Author": {
     "title": "Hi there, I'm {name} and welcome to my Blog",
     "posts": "My Posts"
+  },
+
+  "Search": {
+    "title": "Search",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore.",
+    "Input": {
+      "title": "Search",
+      "placeholder": "Search for..."
+    },
+    "Tags": {
+      "title": "All Tags"
+    },
+    "Categories": {
+      "title": "Categories"
+    },
+    "NotFound": {
+      "title": "No posts found ",
+      "with": "with",
+      "and": "and",
+      "category": "category",
+      "keyword": "keyword",
+      "tagsNames": "tags"
+    }
   }
 }

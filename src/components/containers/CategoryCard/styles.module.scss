@@ -9,10 +9,18 @@
   padding: $spacing-sm;
   transition: $transition-sm;
 
+  h4 {
+    color: $color-dark-blue;
+  }
+
   &:hover {
     transition: $transition-sm;
     background-color: $color-dark-yellow;
   }
+}
+
+.isSelected {
+  background-color: $color-dark-yellow;
 }
 
 .minified,
@@ -25,5 +33,14 @@
   border: none;
   gap: $spacing-xs;
   padding: 0;
-  pointer-events: none;
+  transition: $transition-sm;
+
+  &:hover {
+    background-color: unset;
+    transition: $transition-sm;
+
+    h4 {
+      color: $color-purple;
+    }
+  }
 }

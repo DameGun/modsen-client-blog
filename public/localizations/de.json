@@ -2,6 +2,7 @@
   "Nav": {
     "home": "Heim",
     "blog": "Der Blog",
+    "search": "Suchen",
     "aboutUs": "Über uns",
     "contactUs": "Kontaktieren Sie uns",
     "privacyPolicy": "Datenschutzerklärung"
@@ -222,5 +223,28 @@
   "Author": {
     "title": "Hallo, ich bin {name} und willkommen auf meinem Blog",
     "posts": "Meine Beiträge"
+  },
+
+  "Search": {
+    "title": "Suche",
+    "description": "Ich werde versuchen, es zum Laufen zu bringen, aber ich werde versuchen, es zum Laufen zu bringen.",
+    "Input": {
+      "title": "Suche",
+      "placeholder": "Suche nach..."
+    },
+    "Tags": {
+      "title": "Alle Tags"
+    },
+    "Categories": {
+      "title": "Kategorien"
+    },
+    "NotFound": {
+      "title": "Keine Beiträge gefunden",
+      "with": "mit",
+      "and": "und",
+      "category": "zimmerkategorie",
+      "keyword": "schlusselwort",
+      "tagsNames": "tags"
+    }
   }
 }
