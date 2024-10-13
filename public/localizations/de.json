@@ -149,14 +149,24 @@
     }
   },
 
+  "Pagination": {
+    "prevButton": "< Vorherige",
+    "nextButton": "Nächsten >"
+  },
+
   "Blog": {
     "Posts": {
-      "title": "Alle Beiträge",
-      "prevButton": "< Vorherige",
-      "nextButton": "Nächsten >"
+      "title": "Alle Beiträge"
     },
     "Categories": {
       "title": "Alle Kategorien"
+    }
+  },
+
+  "BlogPost": {
+    "createdAt": "Veröffentlicht am {createdAt}",
+    "RelatedPosts": {
+      "title": "Was als nächstes zu lesen ist"
     }
   },
 
@@ -207,5 +217,10 @@
   "LocaleSwitcher": {
     "en": "English",
     "de": "Deutsch"
+  },
+
+  "Author": {
+    "title": "Hallo, ich bin {name} und willkommen auf meinem Blog",
+    "posts": "Meine Beiträge"
   }
 }

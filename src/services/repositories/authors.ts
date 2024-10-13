@@ -8,7 +8,7 @@ export class AuthorsRepository {
   }
 
   static getAuthorById(authorId: string) {
-    const data = databaseInstance.authors.find(({ id }) => id === authorId);
+    const data = databaseInstance.authors.find(({ id }) => id === authorId)!;
 
     return data;
   }

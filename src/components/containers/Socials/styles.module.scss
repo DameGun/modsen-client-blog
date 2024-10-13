@@ -2,7 +2,7 @@
 @import '@/styles/abstracts/variables.module';
 
 .socialsContainer {
-  @include flex-with-options(row, $spacing-md, space-between, center);
+  @include flex-with-options(row, $spacing-md, null, center);
 
   @include mobile-breakpoint {
     justify-content: flex-start;

@@ -7,22 +7,28 @@ import { useTranslations } from 'next-intl';
 
 import { Post } from '@/components/containers/Post';
 import { POSTS_LENGTH_LIMIT_EXTENDED } from '@/constants/post';
-import { PostsRepository } from '@/services/repositories/posts';
-import type { PaginationMetadata } from '@/types/api';
+import type { PaginationMetadata, PaginationQueryParams } from '@/types/api';
 import type { PostType } from '@/types/post';
 
 import styles from './styles.module.scss';
 
-export function PostsList() {
+type PostsListProps = {
+  title?: string;
+  fetch(params?: PaginationQueryParams): Promise<PaginationMetadata<PostType>>;
+};
+
+export function PostsList({ title, fetch }: PostsListProps) {
   const [page, setPage] = useState(0);
   const [response, setResponse] = useState<PaginationMetadata<PostType>>();
-  const t = useTranslations('Blog.Posts');
+  const t = useTranslations('Pagination');
 
-  const getPosts = useCallback((currentPage: number) => {
-    const res = PostsRepository.getPosts({ limit: POSTS_LENGTH_LIMIT_EXTENDED, page: currentPage });
-    console.log(res);
-    setResponse(res);
-  }, []);
+  const getPosts = useCallback(
+    async (currentPage: number) => {
+      const res = await fetch({ limit: POSTS_LENGTH_LIMIT_EXTENDED, page: currentPage });
+      setResponse(res);
+    },
+    [fetch]
+  );
 
   const handleNext = () => setPage((prev) => (response?.hasMore ? prev + 1 : prev));
   const handlePrev = () => setPage((prev) => (response?.page !== 0 ? prev - 1 : prev));
@@ -33,7 +39,7 @@ export function PostsList() {
 
   return (
     <section className={styles.postsListContainer}>
-      <h1 className={styles.title}>{t('title')}</h1>
+      {title && <h1 className={styles.title}>{title}</h1>}
       <div>{response?.data.map(({ id, ...rest }) => <Post key={id} post={{ id, ...rest }} />)}</div>
       <div className={styles.paginationButtonsContainer}>
         <button

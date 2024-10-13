@@ -18,4 +18,9 @@ type PaginationMetadata<T> = {
   data: T[];
 };
 
-export type { PaginationMetadata, PaginationQueryParams, ParamsWithId };
+type PaginationMetadataExtended<T> = Omit<PaginationMetadata<T>, 'data'> & {
+  startIndex: number;
+  endIndex: number;
+};
+
+export type { PaginationMetadata, PaginationMetadataExtended, PaginationQueryParams, ParamsWithId };

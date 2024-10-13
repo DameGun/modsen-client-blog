@@ -1,0 +1,35 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.authorPageHeaderWrapper {
+  background-color: $color-dark-white;
+  padding: $spacing-lg 0;
+
+  .authorPageHeaderContainer {
+    @extend .containerMd;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    column-gap: $spacing-lg;
+
+    @include tablet-breakpoint(md) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: $spacing-md;
+    }
+
+    .imageContainer {
+      @include flex-with-options(column, $spacing-sm);
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .authorInfo {
+      @include flex-with-options(column, $spacing-md);
+    }
+  }
+}

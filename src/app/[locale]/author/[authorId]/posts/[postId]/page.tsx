@@ -18,7 +18,7 @@ export default function BlogPost({ params: { postId } }: BlogPostProps) {
 
   return (
     <section className={styles.blogPostContainer}>
-      <BlogPostHeader {...rest} category={category} id={id} />
+      <BlogPostHeader {...rest} category={category} />
       <BlogPostImage image={image} />
       <BlogPostContent content={content} />
       <RelatedPostList postId={id} categoryId={category.id} />

@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl';
+
 import { Post } from '@/components/containers/Post';
 import { POSTS_LENGTH_LIMIT_RELATED, PostVariant } from '@/constants/post';
 import { PostsRepository } from '@/services/repositories/posts';
@@ -10,6 +12,7 @@ type RelatedPostsProps = {
 };
 
 export function RelatedPostList({ postId, categoryId }: RelatedPostsProps) {
+  const t = useTranslations('BlogPost.RelatedPosts');
   const relatedPosts = PostsRepository.getPostsByCategoryId(
     postId,
     categoryId,
@@ -18,7 +21,7 @@ export function RelatedPostList({ postId, categoryId }: RelatedPostsProps) {
 
   return (
     <section className={styles.relatedPostsContainer}>
-      <h2>What to read next</h2>
+      <h2>{t('title')}</h2>
       <div className={styles.relatedPostsList}>
         {relatedPosts.map(({ id, ...rest }) => (
           <Post key={id} variant={PostVariant.Related} post={{ id, ...rest }} />
