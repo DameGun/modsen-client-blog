@@ -1,0 +1,44 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.imageWithTextContainer {
+  @extend .sectionContainer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $spacing-xl;
+
+  @include tablet-breakpoint(md) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: $spacing-lg;
+  }
+
+  & > :last-child {
+    @include flex-with-options(column, $spacing-sm, center);
+    padding: $spacing-lg 0;
+
+    @include tablet-breakpoint(md) {
+      padding: 0;
+    }
+
+    p {
+      @extend .body1;
+    }
+  }
+
+  & > :first-child {
+    position: relative;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.reverse {
+  & > :last-child {
+    order: -1;
+  }
+}

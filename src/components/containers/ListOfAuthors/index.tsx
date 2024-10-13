@@ -1,8 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 
-import { AuthorCard } from '@/components/containers/AuthorCard';
-import { ListOfCards } from '@/components/containers/ListOfCards';
 import { AuthorsRepository } from '@/services/repositories/authors';
+
+import { AuthorCard } from '../AuthorCard';
+import { ListOfCards } from '../ListOfCards';
 
 export default async function ListOfAuthors() {
   const authors = AuthorsRepository.getAuthors();

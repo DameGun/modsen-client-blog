@@ -13,7 +13,7 @@ export const DynamicComponents = [
   },
   {
     id: 'ListOfAuthors',
-    Component: dynamic(() => import('@/app/[locale]/components/ListOfAuthors')),
+    Component: dynamic(() => import('@/components/containers/ListOfAuthors')),
   },
   {
     id: 'Testimonials',
