@@ -1,0 +1,11 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.extendedPostContainer {
+  @include flex-with-options(column, $spacing-sm, flex-start, flex-start);
+  @extend .postContainer;
+
+  border: 1px solid $color-light-gray;
+}

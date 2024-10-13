@@ -1,0 +1,14 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.tagsListContainer {
+  h2 {
+    margin-bottom: $spacing-sm;
+  }
+
+  .tagsList {
+    @include flex-with-options(row, $spacing-xs, null, center, null, wrap);
+  }
+}

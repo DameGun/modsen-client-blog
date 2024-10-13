@@ -4,6 +4,7 @@ export const Routes = {
   Post: (authorId: string, postId: string) => `/author/${authorId}/posts/${postId}`,
   AboutUs: '/about-us',
   ContactUs: '/contact',
+  Search: '/search',
   PrivacyPolicy: '/privacy-policy',
   Author: (id: string) => `/author/${id}`,
   Facebook: 'https://facebook.com',

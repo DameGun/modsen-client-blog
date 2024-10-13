@@ -1,0 +1,47 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.aboutUsHeaderContainer {
+  position: relative;
+  @extend .sectionContainer;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: $spacing-sm;
+  align-items: center;
+  margin-bottom: 0;
+  z-index: $z-index-md;
+
+  @include tablet-breakpoint(md) {
+    grid-template-rows: 1fr;
+    row-gap: $spacing-md;
+    grid-template-columns: 1fr;
+  }
+
+  .aboutsUsCardWrapper {
+    position: relative;
+
+    .aboutUsCardContainer {
+      padding: $spacing-lg;
+      background-color: $color-white;
+      transform: translateY(20%);
+      margin-left: $spacing-md;
+
+      @include tablet-breakpoint(md) {
+        transform: unset;
+        margin-left: 0;
+        padding: $spacing-sm;
+      }
+
+      .aboutUsCardLabel {
+        @extend .body2Uppercase;
+        margin-bottom: $spacing-sm;
+      }
+    }
+  }
+
+  .aboutUsHeaderText {
+    @extend .body1Gray;
+  }
+}

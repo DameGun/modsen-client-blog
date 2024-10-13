@@ -2,12 +2,16 @@
 @use '@/styles/abstracts/colors' as *;
 
 .categoryCardContainer {
-  @include flex-with-options(column, $spacing-md, null, flex-start);
+  @include flex-with-options(column, $spacing-md);
   flex: 1;
   border: 1px solid $color-light-gray;
   cursor: pointer;
   padding: $spacing-sm;
   transition: $transition-sm;
+
+  h4 {
+    color: $color-dark-blue;
+  }
 
   &:hover {
     transition: $transition-sm;
@@ -15,6 +19,28 @@
   }
 }
 
-.minified {
+.isSelected {
+  background-color: $color-dark-yellow;
+}
+
+.minified,
+.label {
   flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  border: none;
+  gap: $spacing-xs;
+  padding: 0;
+  transition: $transition-sm;
+
+  &:hover {
+    background-color: unset;
+    transition: $transition-sm;
+
+    h4 {
+      color: $color-purple;
+    }
+  }
 }

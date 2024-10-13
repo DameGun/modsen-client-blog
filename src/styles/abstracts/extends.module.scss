@@ -1,11 +1,12 @@
 @use './colors' as *;
+@use './mixins' as mixins;
 @import './variables.module';
 
 %button {
   border: unset;
   font-family: var(--font-sen);
   cursor: pointer;
-  padding: $spacing-sm $spacing-lg;
+  padding: $spacing-sm $spacing-md;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -35,6 +36,25 @@
   @extend .containerMd;
   margin-top: $spacing-2xl;
   margin-bottom: $spacing-2xl;
+}
+
+.postContainer {
+  padding: $spacing-md;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include mixins.mobile-breakpoint {
+    padding: $spacing-sm;
+  }
+}
+
+.roundAvatar {
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 
 .body1,

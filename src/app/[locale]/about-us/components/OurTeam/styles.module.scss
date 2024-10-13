@@ -1,0 +1,17 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+
+.designSquare {
+  position: absolute;
+  height: 105px;
+  width: 100px;
+  background-color: $color-yellow;
+  z-index: $z-index-md;
+  border-radius: 50% 0 0 0;
+  transform: translate(-50%, 50%);
+
+  @include tablet-breakpoint(md) {
+    display: none;
+  }
+}

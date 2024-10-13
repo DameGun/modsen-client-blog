@@ -34,6 +34,12 @@ export function Nav({ onNavigate, policyVisible }: NavProps) {
         {t('blog')}
       </Link>
       <Link
+        href={Routes.Search}
+        className={cn(styles.link, { [styles.active]: pathname.includes(Routes.Search) })}
+      >
+        {t('search')}
+      </Link>
+      <Link
         href={Routes.AboutUs}
         className={cn(styles.link, { [styles.active]: pathname === Routes.AboutUs })}
         onClick={onNavigate}

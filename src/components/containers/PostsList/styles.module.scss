@@ -1,0 +1,37 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.postsListContainer {
+  @include flex-with-options(column, $spacing-md);
+  @extend .sectionContainer;
+
+  .title {
+    margin-left: $spacing-md;
+    padding-bottom: $spacing-sm;
+    border-bottom: 1px solid $color-light-gray;
+  }
+
+  .paginationButtonsContainer {
+    @include flex-with-options(row, $spacing-md);
+    align-self: center;
+
+    .paginationButton {
+      all: unset;
+      cursor: pointer;
+      color: $color-gray;
+      transition: $transition-md;
+
+      &:hover {
+        color: unset;
+        transform: scale($scale-md);
+        transition: $transition-md;
+      }
+    }
+
+    .isDisabled {
+      pointer-events: none;
+    }
+  }
+}

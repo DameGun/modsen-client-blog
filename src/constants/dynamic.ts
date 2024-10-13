@@ -13,11 +13,11 @@ export const DynamicComponents = [
   },
   {
     id: 'ListOfAuthors',
-    Component: dynamic(() => import('@/app/[locale]/components/ListOfAuthors')),
+    Component: dynamic(() => import('@/components/containers/ListOfAuthors')),
   },
   {
     id: 'Testimonials',
     Component: dynamic(() => import('@/app/[locale]/components/Testimonials')),
   },
-  { id: 'JoinNow', Component: dynamic(() => import('@/app/[locale]/components/JoinNow')) },
+  { id: 'JoinNow', Component: dynamic(() => import('@/components/containers/JoinNow')) },
 ] as const;

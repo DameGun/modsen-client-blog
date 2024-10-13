@@ -4,9 +4,9 @@ import { useCallback, useState } from 'react';
 
 import cn from 'classnames';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
 
-import { Button } from '@/components/ui';
+import { LocaleSwitcher } from '@/components/containers/LocaleSwitcher';
+import { VideoButton } from '@/components/containers/VideoButton';
 import { useDisableTransition, useMediaQuery } from '@/hooks';
 import closeIcon from '@/public/icons/close-icon.svg';
 import menuIcon from '@/public/icons/menu-icon.svg';
@@ -24,8 +24,6 @@ export function Header() {
   useMediaQuery({ query: styles.mediaDesktopQuery, onMatch: onDesktopResize });
   const disableTransition = useDisableTransition();
 
-  const t = useTranslations('Header');
-
   const handleOpen = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
 
@@ -41,21 +39,22 @@ export function Header() {
           })}
         >
           <Nav onNavigate={handleClose} />
-          <Button variant='secondary'>{t('videoButton')}</Button>
+          <VideoButton handleNavClose={handleClose} />
+          <LocaleSwitcher />
         </div>
         <Image
           className={cn(styles.menuButton, { [styles.isVisible]: isOpen })}
           src={closeIcon}
-          width={parseStylesVariableAsNumber(variables.iconSize)}
-          height={parseStylesVariableAsNumber(variables.iconSize)}
+          width={parseStylesVariableAsNumber(variables.imageSizeMd)}
+          height={parseStylesVariableAsNumber(variables.imageSizeMd)}
           alt='Open navigation button'
           onClick={handleClose}
         />
         <Image
           className={cn(styles.menuButton, { [styles.isVisible]: !isOpen })}
           src={menuIcon}
-          width={parseStylesVariableAsNumber(variables.iconSize)}
-          height={parseStylesVariableAsNumber(variables.iconSize)}
+          width={parseStylesVariableAsNumber(variables.imageSizeMd)}
+          height={parseStylesVariableAsNumber(variables.imageSizeMd)}
           alt='Close navigation button'
           onClick={handleOpen}
         />

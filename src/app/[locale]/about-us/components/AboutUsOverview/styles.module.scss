@@ -1,0 +1,32 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.aboutUsOverviewContainer {
+  position: relative;
+  @extend .sectionContainer;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: #{$discover-height-lg}px;
+
+  img {
+    object-fit: cover;
+  }
+
+  .statiscticsContainer {
+    @include flex-with-options(row, $spacing-md, center);
+    position: absolute;
+    padding: $spacing-lg;
+    background-color: $color-dark-yellow;
+    z-index: $z-index-md;
+    bottom: 0;
+    left: 20%;
+
+    @include mobile-breakpoint {
+      left: 0;
+      width: 100%;
+      padding: $spacing-md;
+    }
+  }
+}

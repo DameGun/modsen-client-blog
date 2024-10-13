@@ -2,6 +2,7 @@
   "Nav": {
     "home": "Home",
     "blog": "Blog",
+    "search": "Search",
     "aboutUs": "About Us",
     "contactUs": "Contact Us",
     "privacyPolicy": "Privacy Policy"
@@ -146,6 +147,104 @@
     "Featured": {
       "category": "Posted on",
       "button": "Read More >"
+    }
+  },
+
+  "Pagination": {
+    "prevButton": "< Prev",
+    "nextButton": "Next >"
+  },
+
+  "Blog": {
+    "Posts": {
+      "title": "All Posts"
+    },
+    "Categories": {
+      "title": "All Categories"
+    }
+  },
+
+  "BlogPost": {
+    "createdAt": "Posted on {createdAt}",
+    "RelatedPosts": {
+      "title": "What to read next"
+    }
+  },
+
+  "AboutUs": {
+    "Header": {
+      "label": "About Us",
+      "title": "We are a team of content writers who share their learnings",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "Overview": {
+      "Published": {
+        "count": "12+",
+        "title": "Blogs Published"
+      },
+      "Views": {
+        "count": "18K+",
+        "title": "Views on Finsweet"
+      },
+      "ActiveUsers": {
+        "count": "30K+",
+        "title": "Total Active Users"
+      }
+    },
+    "Mission": {
+      "OurMission": {
+        "label": "Our mission",
+        "title": "Creating valuable content for creatives all around the world",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra maurisin aliquam sem. At risus viverra adipiscing at in tellus."
+      },
+      "OurVision": {
+        "label": "Our Vision",
+        "title": "A platform that empowers individuals to improve",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra maurisin aliquam sem. At risus viverra adipiscing at in tellus."
+      }
+    },
+    "OurTeam": {
+      "label": "Our team of creatives",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "content": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatioullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    },
+    "WhyWeStarted": {
+      "label": "Why we started this Blog",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
+  },
+
+  "LocaleSwitcher": {
+    "en": "English",
+    "de": "Deutsch"
+  },
+
+  "Author": {
+    "title": "Hi there, I'm {name} and welcome to my Blog",
+    "posts": "My Posts"
+  },
+
+  "Search": {
+    "title": "Search",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore.",
+    "Input": {
+      "title": "Search",
+      "placeholder": "Search for..."
+    },
+    "Tags": {
+      "title": "All Tags"
+    },
+    "Categories": {
+      "title": "Categories"
+    },
+    "NotFound": {
+      "title": "No posts found ",
+      "with": "with",
+      "and": "and",
+      "category": "category",
+      "keyword": "keyword",
+      "tagsNames": "tags"
     }
   }
 }

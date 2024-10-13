@@ -1,0 +1,22 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.tagCard {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid $color-gray;
+  color: $color-gray;
+  border-radius: 20px;
+  padding: $spacing-xs $spacing-md;
+  transition: $transition-sm;
+
+  &:hover {
+    background-color: $color-light-gray;
+  }
+}
+
+.isSelected {
+  background-color: $color-dark-gray;
+}

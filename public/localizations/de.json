@@ -2,6 +2,7 @@
   "Nav": {
     "home": "Heim",
     "blog": "Der Blog",
+    "search": "Suchen",
     "aboutUs": "Über uns",
     "contactUs": "Kontaktieren Sie uns",
     "privacyPolicy": "Datenschutzerklärung"
@@ -146,6 +147,104 @@
     "Featured": {
       "category": "Veröffentlicht am",
       "button": "Mehr lesen >"
+    }
+  },
+
+  "Pagination": {
+    "prevButton": "< Vorherige",
+    "nextButton": "Nächsten >"
+  },
+
+  "Blog": {
+    "Posts": {
+      "title": "Alle Beiträge"
+    },
+    "Categories": {
+      "title": "Alle Kategorien"
+    }
+  },
+
+  "BlogPost": {
+    "createdAt": "Veröffentlicht am {createdAt}",
+    "RelatedPosts": {
+      "title": "Was als nächstes zu lesen ist"
+    }
+  },
+
+  "AboutUs": {
+    "Header": {
+      "label": "Über uns",
+      "title": "Wir sind ein Team von Content-Autoren, die ihre Erkenntnisse teilen",
+      "content": "Bitte beachten Sie, dass das Hauptstudium verfügbar ist, aber machen Sie dasselbe, solange der Aufwand und die Fettleibigkeit auftreten. Was das Minimum betrifft, trägt jede Nostradamus-Routine nur die Ziele davon als praktisches Rezept."
+    },
+    "Overview": {
+      "Published": {
+        "count": "12+",
+        "title": "Veröffentlichte Blogs"
+      },
+      "Views": {
+        "count": "18K+",
+        "title": "Ansichten über Finsweet"
+      },
+      "ActiveUsers": {
+        "count": "30K+",
+        "title": "Aktive Benutzer insgesamt"
+      }
+    },
+    "Mission": {
+      "OurMission": {
+        "label": "Unsere Mission",
+        "title": "Erstellen wertvoller Inhalte für Kreative auf der ganzen Welt",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut Labor et dolore magna aliqua. Nicht blandit Masse enim nec. Scelerisque viverra maurisin aliquam sem. At risus viverra adipiscing at in tellus."
+      },
+      "OurVision": {
+        "label": "Unsere Vision",
+        "title": "Eine Plattform, die es Einzelpersonen ermöglicht, sich zu verbessern",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut Labor et dolore magna aliqua. Nicht blandit Masse enim nec. Scelerisque viverra maurisin aliquam sem. At risus viverra adipiscing at in tellus."
+      }
+    },
+    "OurTeam": {
+      "label": "Unser Team von Kreativen",
+      "title": "Bitte beachten Sie, dass dies ein sehr wichtiger Aspekt ist, aber tun Sie dies auf die gleiche Weise wie ein vorübergehender Zufall.",
+      "content": "Bitte beachten Sie, dass dies ein sehr wichtiger Aspekt ist, aber ich gebe ihm die gleichen vorübergehenden Auswirkungen wie harte Arbeit und Fettleibigkeit. Damit es auf ein Minimum reduziert wird, arbeitet jede unserer Übungen nur, um die Ziele der Bequemlichkeit des Rezepts zu erreichen. Ich schwöre, ich hatte Schmerzen, als ich weggelaufen bin."
+    },
+    "WhyWeStarted": {
+      "label": "Warum wir diesen Blog gestartet haben",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "content": "Bitte beachten Sie, dass dies ein sehr wichtiger Aspekt ist, aber ich gebe ihm die gleichen vorübergehenden Auswirkungen wie harte Arbeit und Fettleibigkeit. Damit es auf ein Minimum reduziert wird, arbeitet jeder unserer Routinelamko nur, um die Ziele der Bequemlichkeit des Rezepts zu erreichen. Ich schwöre, ich hatte Schmerzen, als ich weggelaufen bin."
+    }
+  },
+
+  "LocaleSwitcher": {
+    "en": "English",
+    "de": "Deutsch"
+  },
+
+  "Author": {
+    "title": "Hallo, ich bin {name} und willkommen auf meinem Blog",
+    "posts": "Meine Beiträge"
+  },
+
+  "Search": {
+    "title": "Suche",
+    "description": "Ich werde versuchen, es zum Laufen zu bringen, aber ich werde versuchen, es zum Laufen zu bringen.",
+    "Input": {
+      "title": "Suche",
+      "placeholder": "Suche nach..."
+    },
+    "Tags": {
+      "title": "Alle Tags"
+    },
+    "Categories": {
+      "title": "Kategorien"
+    },
+    "NotFound": {
+      "title": "Keine Beiträge gefunden",
+      "with": "mit",
+      "and": "und",
+      "category": "zimmerkategorie",
+      "keyword": "schlusselwort",
+      "tagsNames": "tags"
     }
   }
 }

@@ -1,0 +1,21 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.blogPostHeaderContainer {
+  @include flex-with-options(column, $spacing-sm);
+  @extend .containerSm;
+
+  .authorInfo {
+    @include flex-with-options(row, $spacing-sm, null, center);
+
+    img {
+      @extend .roundAvatar;
+    }
+
+    .authorName {
+      color: $color-purple;
+    }
+  }
+}
