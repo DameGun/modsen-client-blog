@@ -3,12 +3,10 @@
 @import '@/styles/abstracts/variables.module';
 @import '@/styles/abstracts/extends.module';
 
-.postContainer {
-  @include flex-with-options(column, $spacing-sm, flex-start, flex-start);
-  padding: $spacing-md;
-}
+.minifiedPostContainer {
+  @include flex-with-options(column, $spacing-sm);
+  @extend .postContainer;
 
-.minified {
   cursor: pointer;
   transition: $transition-sm;
 

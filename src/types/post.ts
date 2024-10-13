@@ -25,6 +25,10 @@ type PropsWithPost = {
   post: PostType;
 };
 
+type PostVariantProps = PropsWithPost & {
+  handleClick: VoidFunction;
+};
+
 type PostImageSizeType = {
   width: number;
   height: number;
@@ -36,4 +40,11 @@ type FeaturedPostParams = {
   };
 };
 
-export type { FeaturedPostParams, PostDTO, PostImageSizeType, PostType, PropsWithPost };
+export type {
+  FeaturedPostParams,
+  PostDTO,
+  PostImageSizeType,
+  PostType,
+  PostVariantProps,
+  PropsWithPost,
+};

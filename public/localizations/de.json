@@ -147,5 +147,16 @@
       "category": "Veröffentlicht am",
       "button": "Mehr lesen >"
     }
+  },
+
+  "Blog": {
+    "Posts": {
+      "title": "Alle Beiträge",
+      "prevButton": "< Vorherige",
+      "nextButton": "Nächsten >"
+    },
+    "Categories": {
+      "title": "Alle Kategorien"
+    }
   }
 }

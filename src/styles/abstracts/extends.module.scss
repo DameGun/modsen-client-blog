@@ -1,4 +1,5 @@
 @use './colors' as *;
+@use './mixins' as mixins;
 @import './variables.module';
 
 %button {
@@ -35,6 +36,19 @@
   @extend .containerMd;
   margin-top: $spacing-2xl;
   margin-bottom: $spacing-2xl;
+}
+
+.postContainer {
+  padding: $spacing-md;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include mixins.mobile-breakpoint {
+    padding: $spacing-sm;
+  }
 }
 
 .body1,

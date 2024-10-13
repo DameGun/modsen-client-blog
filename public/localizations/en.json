@@ -147,5 +147,16 @@
       "category": "Posted on",
       "button": "Read More >"
     }
+  },
+
+  "Blog": {
+    "Posts": {
+      "title": "All Posts",
+      "prevButton": "< Prev",
+      "nextButton": "Next >"
+    },
+    "Categories": {
+      "title": "All Categories"
+    }
   }
 }

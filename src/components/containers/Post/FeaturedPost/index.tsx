@@ -2,16 +2,17 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/ui';
-import { Routes } from '@/constants/routes';
-import { Link } from '@/i18n/routing';
 import extendsVariables from '@/styles/abstracts/extends.module.scss';
-import type { PropsWithPost } from '@/types/post';
+import type { PostVariantProps } from '@/types/post';
 
 import styles from './styles.module.scss';
 
+import { PostInfo } from '../PostInfo';
+
 export function FeaturedPost({
-  post: { id, category, title, author, createdAt, description, image },
-}: PropsWithPost) {
+  post: { category, title, author, createdAt, description, image },
+  handleClick,
+}: PostVariantProps) {
   const t = useTranslations('Post');
 
   return (
@@ -26,16 +27,10 @@ export function FeaturedPost({
         </h4>
         <h1 className={extendsVariables.display}>{title}</h1>
         <span className={styles.postInfo}>
-          <p className={extendsVariables.body1}>
-            {t('info')}&nbsp;
-            <Link href={Routes.Author(id)} className={styles.authorName}>
-              {author.name}
-            </Link>
-            &nbsp; | {createdAt}
-          </p>
+          <PostInfo author={author} createdAt={createdAt} />
         </span>
         <p className={extendsVariables.body1}>{description}</p>
-        <Button>{t('Featured.button')}</Button>
+        <Button onClick={handleClick}>{t('Featured.button')}</Button>
       </div>
     </section>
   );
