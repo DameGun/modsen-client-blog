@@ -1,0 +1,39 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.containerShape {
+  @include flex-with-options(row, null, flex-end);
+
+  & > * {
+    height: $about-us-line-height;
+    display: block;
+  }
+
+  :first-child {
+    width: 50%;
+    background-color: $color-purple;
+  }
+
+  :last-child {
+    width: 20%;
+    background-color: $color-yellow;
+  }
+}
+
+.aboutUsContainer {
+  @include flex-with-options(row, $spacing-lg, space-between, flex-start);
+  background-color: $color-dark-white;
+  padding: $spacing-xl;
+
+  @include tablet-breakpoint {
+    flex-direction: column;
+    padding: $spacing-md;
+  }
+
+  .aboutUsArticle {
+    @include flex-with-options(column, $spacing-md);
+    flex: 1;
+  }
+}

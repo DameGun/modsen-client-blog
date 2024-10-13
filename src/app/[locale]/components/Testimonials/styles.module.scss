@@ -1,0 +1,29 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.testimonialsContainer {
+  @include flex-with-options(row, $spacing-lg);
+  background-color: $color-light-pink;
+  padding: $spacing-xl;
+
+  @include tablet-breakpoint(md) {
+    padding: $spacing-md;
+    flex-direction: column;
+  }
+
+  .testimonialsInfoContainer {
+    @include flex-with-options(column, $spacing-sm);
+    border-right: 1px solid $color-light-gray;
+    padding-right: $spacing-md;
+    flex: 1;
+
+    @include tablet-breakpoint(md) {
+      border-right: unset;
+      padding-right: unset;
+      border-bottom: 1px solid $color-light-gray;
+      padding-bottom: $spacing-md;
+    }
+  }
+}

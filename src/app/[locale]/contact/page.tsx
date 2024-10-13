@@ -1,9 +1,9 @@
 import { useTranslations } from 'next-intl';
 
-import { ContactForm, MapboxMap } from '@/components/containers';
 import { SectionHeader } from '@/components/ui';
 import extendsStyles from '@/styles/abstracts/extends.module.scss';
 
+import { ContactForm, MapboxMap } from './components';
 import styles from './styles.module.scss';
 
 export default function ContactPage() {
@@ -15,7 +15,7 @@ export default function ContactPage() {
         <h1>{t('title')}</h1>
         <p>{t('content')}</p>
       </SectionHeader>
-      <section className={extendsStyles.containerMd}>
+      <section className={extendsStyles.containerSm}>
         <section className={styles.contactInfo}>
           <div className={styles.contactSection}>
             <p className={extendsStyles.body1}>{t('WorkingHours.title')}</p>

@@ -1,8 +1,9 @@
-import { LngLatLike, Map, Marker, Popup } from 'mapbox-gl';
-import { useTranslations } from 'next-intl';
+import type { LngLatLike, Map } from 'mapbox-gl';
+import { Marker, Popup } from 'mapbox-gl';
+import type { useTranslations } from 'next-intl';
 
 import { GERMANY_DEPARTMENT, POLAND_DEPARTMENT, UNITED_KINGDOM_DEPARTMENT } from '@/constants/map';
-import { MapFeatureProperties } from '@/types/map';
+import type { MapFeatureProperties } from '@/types/map';
 
 export const getGeoData = (
   intl: ReturnType<typeof useTranslations>

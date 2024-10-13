@@ -1,0 +1,8 @@
+@use '@/styles/abstracts/mixins' as *;
+@import '@/styles/abstracts/extends.module';
+
+.joinNowContainer {
+  @extend .sectionContainer;
+  @include flex-with-options(column, $spacing-md, center, center);
+  text-align: center;
+}

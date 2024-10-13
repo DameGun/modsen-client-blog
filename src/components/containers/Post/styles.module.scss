@@ -1,0 +1,28 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.postContainer {
+  @include flex-with-options(column, $spacing-sm, flex-start, flex-start);
+  padding: $spacing-md;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.featured {
+  border: 1px solid $color-light-gray;
+}
+
+.minified {
+  cursor: pointer;
+  transition: $transition-sm;
+
+  &:hover {
+    transition: $transition-sm;
+    background-color: $color-dark-white;
+  }
+}

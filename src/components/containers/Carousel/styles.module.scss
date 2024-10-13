@@ -1,0 +1,63 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+
+.carouselContainer {
+  @include flex-with-options(column, $spacing-2xl);
+  flex: 1;
+
+  .carouselInfoContainer {
+    @include flex-with-options(row, null, space-between);
+
+    @include mobile-breakpoint {
+      flex-direction: column;
+      gap: $spacing-md;
+    }
+
+    .personDataContainer {
+      @include flex-with-options(row, $spacing-sm);
+      .personImage {
+        object-fit: cover;
+        border: 1px solid transparent;
+        border-radius: 50%;
+      }
+    }
+
+    .carouselButtonsContainer {
+      @include flex-with-options(row, $spacing-sm);
+
+      @include mobile-breakpoint {
+        justify-content: space-between;
+      }
+
+      .carouselControlLeft,
+      .carouselControlRight {
+        cursor: pointer;
+        background-color: $color-white;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        position: relative;
+        height: $carousel-control-size;
+        width: $carousel-control-size;
+        transition: $transition-sm;
+
+        &:hover {
+          background-color: $color-dark-blue;
+          transform: scale($scale-md);
+          transition: $transition-sm;
+
+          img {
+            transition: $transition-sm;
+            filter: invert(1);
+          }
+        }
+      }
+
+      .carouselControlRight {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

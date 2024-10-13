@@ -8,7 +8,7 @@
   background-color: $color-dark-white;
 
   .sectionHeaderInnerContainer {
-    @extend .containerMd;
+    @extend .containerSm;
     @include flex-with-options(column, $spacing-md, center, center);
     text-align: center;
 

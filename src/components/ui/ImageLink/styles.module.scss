@@ -1,0 +1,10 @@
+@import '@/styles/abstracts/variables.module';
+
+.imageLink {
+  transition: $transition-sm;
+
+  &:hover {
+    transition: $transition-sm;
+    transform: scale($scale-md);
+  }
+}

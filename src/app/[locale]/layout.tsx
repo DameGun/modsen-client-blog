@@ -1,11 +1,11 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
 import { Footer, Header } from '@/components/common';
 import { senFont } from '@/styles/fonts';
-import { LocaleLayoutParams } from '@/types/i18n';
+import type { LocaleLayoutParams } from '@/types/i18n';
 
 import '@/styles/globals.scss';
 

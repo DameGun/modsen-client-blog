@@ -1,4 +1,4 @@
-import en from '@/public/localizations/en.json';
+import type en from '@/public/localizations/en.json';
 
 type LocaleLayoutParams = {
   locale: string;

@@ -1,4 +1,5 @@
-@import './variables.module.scss';
+@use './colors' as *;
+@import './variables.module';
 
 %button {
   border: unset;
@@ -22,7 +23,18 @@
 
 .containerMd {
   @extend %baseContainer;
+  max-width: 1282px;
+}
+
+.containerSm {
+  @extend %baseContainer;
   max-width: 768px;
+}
+
+.sectionContainer {
+  @extend .containerMd;
+  margin-top: $spacing-2xl;
+  margin-bottom: $spacing-2xl;
 }
 
 .body1,
@@ -36,12 +48,28 @@
   line-height: 28px;
 }
 
+.body1Gray {
+  @extend .body1;
+  color: $color-gray;
+}
+
 .body2 {
   font-size: 16px;
   line-height: 20px;
 }
 
+.body2Uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .label {
   font-size: 14px;
   line-height: 20px;
+}
+
+.display {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: bold;
 }

@@ -17,11 +17,6 @@
     "placeholder": "Enter Your Email"
   },
 
-  "Home": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
-  },
-
   "PrivacyPolicy": {
     "title": "Privacy Policy",
     "lastUpdatedAt": "Last Updated on 27th January 2022",
@@ -100,6 +95,57 @@
     "UnitedKingdom": {
       "title": "Department in United Kingdom",
       "description": "London SW1A 1AA, United Kingdom"
+    }
+  },
+
+  "Home": {
+    "Posts": {
+      "featuredPost": "Featured Post",
+      "allPosts": "All Posts",
+      "viewAllButton": "View All"
+    },
+    "AboutUs": {
+      "About": {
+        "label": "About Us",
+        "title": "We are a community of content writers who share their learnings",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+      },
+      "Mission": {
+        "label": "Our Mission",
+        "title": "Creating valuable content for creatives all around the world",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      "button": "Read more >"
+    },
+    "Categories": {
+      "title": "Choose A Category"
+    },
+    "Discover": {
+      "label": "Why We Started",
+      "title": "It started out as a simple idea and evolved into our passion",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip.",
+      "button": "Discover our story >"
+    },
+    "JoinNow": {
+      "title": "Join our team to be a part of our story",
+      "content": " Have a great opportunity to become relevant blogger and famous inside technology and IT sphere",
+      "button": "Join Now"
+    },
+    "Authors": {
+      "title": "List of Authors"
+    },
+    "Testimonials": {
+      "label": "Testimonials",
+      "title": "What people say about our blog",
+      "content": "We value our customers very much and try to provide the best user experience, the impact of which is reflected in our customer reviews"
+    }
+  },
+
+  "Post": {
+    "info": "By",
+    "Featured": {
+      "category": "Posted on",
+      "button": "Read More >"
     }
   }
 }

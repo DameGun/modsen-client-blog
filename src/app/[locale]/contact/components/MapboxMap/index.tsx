@@ -20,7 +20,6 @@ export function MapboxMap() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (!isLoading) return;
     if (!mapContainerRef.current) return;
 
     const map = new Map({

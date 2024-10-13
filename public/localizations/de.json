@@ -17,11 +17,6 @@
     "placeholder": "Geben Sie Ihre E-Mail ein"
   },
 
-  "Home": {
-    "title": "Hallo Welt!",
-    "about": "Gehen Sie auf die About-Seite"
-  },
-
   "PrivacyPolicy": {
     "title": "Datenschutzerklärung",
     "lastUpdatedAt": "Zuletzt aktualisiert am 27.Januar 2022",
@@ -100,6 +95,57 @@
     "UnitedKingdom": {
       "title": "Abteilung in Vereinigtes Königreich",
       "description": "London SW1A 1AA, Vereinigtes Königreich"
+    }
+  },
+
+  "Home": {
+    "Posts": {
+      "featuredPost": "Vorgestellter Beitrag",
+      "allPosts": "Alle Beiträge",
+      "viewAllButton": "Alle anzeigen"
+    },
+    "AboutUs": {
+      "About": {
+        "label": "Über uns",
+        "title": "Wir sind eine Gemeinschaft von Content-Autoren, die ihre Erkenntnisse teilen",
+        "content": "Bitte beachten Sie, dass dies das Haupt-Bachelor-Programm ist, aber tun Sie dies vorübergehend als harte Arbeit und Fettleibigkeit."
+      },
+      "Mission": {
+        "label": "Unsere Mission",
+        "title": "Erstellen wertvoller Inhalte für Kreative auf der ganzen Welt",
+        "content": "Bitte beachten Sie, dass dies das Haupt-Bachelor-Programm ist, aber tun Sie dies vorübergehend als harte Arbeit und Fettleibigkeit."
+      },
+      "button": "Lesen Sie mehr >"
+    },
+    "Categories": {
+      "title": "Wählen Sie eine Kategorie"
+    },
+    "Discover": {
+      "label": "Warum wir angefangen haben",
+      "title": "Es begann als einfache Idee und entwickelte sich zu unserer Leidenschaft",
+      "content": "Bitte beachten Sie, dass dies ein sehr wichtiger, lohnenswerter und lohnenswerter Prozess ist, aber tun Sie dies im Laufe der Zeit, da dies zu Müdigkeit und Fettleibigkeit führen kann. Was das Minimum betrifft, arbeiten alle unsere Routineullamco nur, um Ziele zu erreichen.",
+      "button": "Entdecken Sie unsere Geschichte >"
+    },
+    "JoinNow": {
+      "title": "Werden Sie Teil unseres Teams und werden Sie Teil unserer Geschichte",
+      "content": "Haben Sie eine großartige Gelegenheit, relevanter Blogger und berühmt in der Technologie- und IT-Sphäre zu werden",
+      "button": "Jetzt beitreten"
+    },
+    "Authors": {
+      "title": "Liste der Autoren"
+    },
+    "Testimonials": {
+      "label": "Kundenmeinungen",
+      "title": "Was die Leute über unseren Blog sagen",
+      "content": "Wir schätzen unsere Kunden sehr und versuchen, die beste Benutzererfahrung zu bieten, deren Auswirkung sich in unseren Kundenbewertungen widerspiegelt"
+    }
+  },
+
+  "Post": {
+    "info": "Von",
+    "Featured": {
+      "category": "Veröffentlicht am",
+      "button": "Mehr lesen >"
     }
   }
 }

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
 
-import { Locales } from '@/constants/i18n';
+import type { Locales } from '@/constants/i18n';
 
 import { routing } from './routing';
 

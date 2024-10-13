@@ -1,21 +1,21 @@
 'use client';
 
-import { SubmitHandler, useForm } from 'react-hook-form';
+import type { SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
 import cn from 'classnames';
 import { useTranslations } from 'next-intl';
 
+import { FormField } from '@/components/containers/FormField';
 import { Button, RelativeAlert } from '@/components/ui';
 import { AlertMessages } from '@/constants/alert';
 import { MESSAGE_LENGTH_CONSTRAINT } from '@/constants/validation';
 import { useEmail } from '@/hooks';
-import { ContactFormType } from '@/types/contact';
+import type { ContactFormType } from '@/types/contact';
 
 import styles from './styles.module.scss';
 import { contactValidationSchema } from './validation';
-
-import { FormField } from '../FormField';
 
 export function ContactForm() {
   const t = useTranslations('Contact.Form');

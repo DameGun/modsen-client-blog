@@ -1,0 +1,20 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+
+.categoryCardContainer {
+  @include flex-with-options(column, $spacing-md, null, flex-start);
+  flex: 1;
+  border: 1px solid $color-light-gray;
+  cursor: pointer;
+  padding: $spacing-sm;
+  transition: $transition-sm;
+
+  &:hover {
+    transition: $transition-sm;
+    background-color: $color-dark-yellow;
+  }
+}
+
+.minified {
+  flex-direction: row;
+}
