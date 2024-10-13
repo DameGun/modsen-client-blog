@@ -46,4 +46,13 @@ export class PostsRepository {
 
     return post;
   }
+
+  static getPostsByCategoryId(relatedPostId: string, searchCategoryId: number, limit?: number) {
+    const data = databaseInstance.posts
+      .filter(({ id, categoryId }) => categoryId === searchCategoryId && id !== relatedPostId)
+      .slice(0, limit);
+    const posts: PostType[] = data.map((post) => mapPostData(post));
+
+    return posts;
+  }
 }

@@ -26,7 +26,7 @@ export function CategoryCard({
         width={parseStylesVariableAsNumber(variables.imageSizeLg)}
         alt='Category Icon'
       />
-      <h3>{name}</h3>
+      <h4>{name}</h4>
       {variant === CategoryVariant.Extended && (
         <p className={extendsVariables.body1Gray}>{description}</p>
       )}

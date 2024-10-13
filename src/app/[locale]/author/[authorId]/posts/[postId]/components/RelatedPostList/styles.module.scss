@@ -1,0 +1,21 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.relatedPostsContainer {
+  @extend .sectionContainer;
+  @include flex-with-options(column, $spacing-md);
+
+  .relatedPostsList {
+    @include flex-with-options(row, $spacing-sm);
+
+    & > * {
+      flex: 1;
+    }
+
+    @include tablet-breakpoint(md) {
+      flex-direction: column;
+    }
+  }
+}

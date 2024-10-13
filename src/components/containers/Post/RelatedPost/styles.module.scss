@@ -1,0 +1,17 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/colors' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.relatedPostContainer {
+  @include flex-with-options(column, $spacing-sm, flex-start, flex-start);
+  @extend .postContainer;
+
+  cursor: pointer;
+  transition: $transition-sm;
+
+  &:hover {
+    transition: $transition-sm;
+    background-color: $color-dark-white;
+  }
+}

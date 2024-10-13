@@ -51,6 +51,12 @@
   }
 }
 
+.roundAvatar {
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
 .body1,
 .body2,
 .label {
