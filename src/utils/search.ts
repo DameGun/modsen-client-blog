@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import type { useTranslations } from 'next-intl';
 
 import { SearchParamsEmptyFallback } from '@/constants/search';
 import type { Article } from '@/types/content';
@@ -23,16 +23,18 @@ function searchInContent(content: Article[], keyword: string) {
   );
 }
 
-export async function generatePostsEmptyFallbackText(params: SearchParams) {
-  const t = await getTranslations('Search.NotFound');
+export function generatePostsEmptyFallbackText(
+  intl: ReturnType<typeof useTranslations>,
+  params: SearchParams
+) {
   let index = 0;
-  let resString = t('title');
+  let resString = intl('title');
   let param: keyof typeof params;
 
   for (param in params) {
     if (param in params) {
-      const value = SearchParamsEmptyFallback[param](t(param), params[param]);
-      resString += index === 0 ? `${t('with')} ${value} ` : `${t('and')} ${value} `;
+      const value = SearchParamsEmptyFallback[param](intl(param), params[param]);
+      resString += index === 0 ? `${intl('with')} ${value} ` : `${intl('and')} ${value} `;
       index++;
     }
   }
