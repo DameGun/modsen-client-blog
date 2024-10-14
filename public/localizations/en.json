@@ -246,5 +246,18 @@
       "keyword": "keyword",
       "tagsNames": "tags"
     }
+  },
+
+  "Error": {
+    "title": "Internal Error Occured.",
+    "description": "Please reload the page or try again later...",
+    "button": "Go to Home"
+  },
+
+  "NotFound": {
+    "status": "404",
+    "title": "Page Not Found.",
+    "description": "The page you looking for is missing or internal error happened...",
+    "button": "Go to Home"
   }
 }

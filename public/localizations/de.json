@@ -246,5 +246,18 @@
       "keyword": "schlusselwort",
       "tagsNames": "tags"
     }
+  },
+
+  "Error": {
+    "title": "Interner Fehler aufgetreten.",
+    "description": "Bitte laden Sie die Seite neu oder versuchen Sie es später erneut...",
+    "button": "Gehe nach Hause"
+  },
+
+  "NotFound": {
+    "status": "404",
+    "title": "GehGo to Homee nach Hause",
+    "description": "Die gesuchte Seite fehlt oder es ist ein interner Fehler aufgetreten...",
+    "button": "Gehe nach Hause"
   }
 }
