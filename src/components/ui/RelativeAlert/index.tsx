@@ -22,6 +22,7 @@ export function RelativeAlert({
         [styles.isError]: isError,
         [styles.isSuccess]: isSuccess,
       })}
+      data-testid='relativeAlert'
     >
       {isError && (
         <>

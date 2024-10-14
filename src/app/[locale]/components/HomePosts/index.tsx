@@ -20,7 +20,7 @@ export default async function HomePosts() {
           <h2>{t('featuredPost')}</h2>
         </div>
         <div className={styles.sectionInnerContainer}>
-          <Post variant={PostVariant.Extended} post={featuredPost} />
+          <Post variant={PostVariant.Extended} post={featuredPost} data-testid='homeExtendedPost' />
         </div>
       </div>
       <div className={styles.postsListContainer}>

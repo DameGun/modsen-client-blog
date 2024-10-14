@@ -13,7 +13,7 @@ export default function JoinNow() {
     <section className={styles.joinNowContainer}>
       <h2>{t('title')}</h2>
       <p>{t('content')}</p>
-      <Link href={Routes.ContactUs}>
+      <Link href={Routes.ContactUs} data-testid='joinNowButton'>
         <Button>{t('button')}</Button>
       </Link>
     </section>

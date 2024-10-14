@@ -60,6 +60,7 @@ export function SearchInput() {
         placeholder={t('placeholder')}
         defaultValue={keyword}
         onKeyDown={handleKeyDown}
+        data-testid='searchInput'
       />
       <Button onClick={handleSearch}>{t('title')}</Button>
     </span>

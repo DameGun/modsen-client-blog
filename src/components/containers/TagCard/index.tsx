@@ -53,6 +53,7 @@ export function TagCard({ tag: { name }, isSelected = false }: TagCardProps) {
     <button
       className={cn(styles.tagCard, { [styles.isSelected]: isSelected })}
       onClick={handleClick}
+      data-testid={`tagCard-${name}`}
     >
       {name}
     </button>
