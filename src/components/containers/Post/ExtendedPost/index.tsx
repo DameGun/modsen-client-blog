@@ -13,11 +13,12 @@ import { PostInfo } from '../PostInfo';
 export function ExtendedPost({
   post: { image, title, createdAt, author, description },
   handleClick,
+  ...rest
 }: PostVariantProps) {
   const t = useTranslations('Post.Featured');
 
   return (
-    <div className={styles.extendedPostContainer}>
+    <div className={styles.extendedPostContainer} {...rest}>
       <Image src={image} {...PostImageSize.extended} alt='Post Image' />
       <PostInfo createdAt={createdAt} author={author} />
       <h3>{title}</h3>

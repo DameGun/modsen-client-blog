@@ -46,19 +46,25 @@ export function PostsList({ title, fetch, emptyFallbackText }: PostsListProps) {
       {title && <h1 className={styles.title}>{title}</h1>}
       {response && response.data.length > 0 ? (
         <>
-          <div>
-            {response?.data.map(({ id, ...rest }) => <Post key={id} post={{ id, ...rest }} />)}
+          <div data-testid='postsListPaginated'>
+            {response.data.map(({ id, ...rest }) => (
+              <Post key={id} post={{ id, ...rest }} />
+            ))}
           </div>
           <div className={styles.paginationButtonsContainer}>
             <button
-              className={cn(styles.paginationButton, { [styles.isDisabled]: response?.page === 0 })}
+              className={cn(styles.paginationButton, { [styles.isDisabled]: response.page === 0 })}
               onClick={handlePrev}
+              disabled={response.page === 0}
+              data-testid='paginationButtonPrev'
             >
               <h4>{t('prevButton')}</h4>
             </button>
             <button
-              className={cn(styles.paginationButton, { [styles.isDisabled]: !response?.hasMore })}
+              className={cn(styles.paginationButton, { [styles.isDisabled]: !response.hasMore })}
+              disabled={!response.hasMore}
               onClick={handleNext}
+              data-testid='paginationButtonNext'
             >
               <h4>{t('nextButton')}</h4>
             </button>

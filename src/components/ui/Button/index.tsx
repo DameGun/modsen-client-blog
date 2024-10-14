@@ -16,6 +16,7 @@ export function Button({ variant = 'primary', isDisabled, isLoading, ...props }:
   return (
     <button
       {...props}
+      disabled={isDisabled}
       className={cn(styles[variant], {
         [styles.isDisabled]: isDisabled,
         [styles.isLoading]: isLoading,

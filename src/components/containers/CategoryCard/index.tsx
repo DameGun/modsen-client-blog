@@ -49,6 +49,7 @@ export function CategoryCard({
         [styles.isSelected]: isSelected,
       })}
       onClick={handleClick}
+      data-testid={`categoryCard-${name}`}
     >
       <Image
         src={image}

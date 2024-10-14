@@ -1,5 +1,6 @@
 import type { Author } from './author';
 import type { Article } from './content';
+import type { PropsWithTestId } from './helpers';
 import type { Category, Tag } from './identifiers';
 
 type PostDTO = {
@@ -25,9 +26,10 @@ type PropsWithPost = {
   post: PostType;
 };
 
-type PostVariantProps = PropsWithPost & {
-  handleClick: VoidFunction;
-};
+type PostVariantProps = PropsWithPost &
+  PropsWithTestId & {
+    handleClick: VoidFunction;
+  };
 
 type PostImageSizeType = {
   width: number;
