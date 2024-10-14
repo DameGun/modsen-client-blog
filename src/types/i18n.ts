@@ -6,4 +6,10 @@ type LocaleLayoutParams = {
 
 type MessagesType = typeof en;
 
-export type { LocaleLayoutParams, MessagesType };
+type MetadataWithLocaleProps = {
+  params: {
+    locale: string;
+  };
+};
+
+export type { LocaleLayoutParams, MessagesType, MetadataWithLocaleProps };

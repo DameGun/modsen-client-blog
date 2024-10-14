@@ -1,6 +1,6 @@
 {
   "Nav": {
-    "home": "Heim",
+    "home": "Startseite",
     "blog": "Der Blog",
     "search": "Suchen",
     "aboutUs": "Über uns",
@@ -246,5 +246,29 @@
       "keyword": "schlusselwort",
       "tagsNames": "tags"
     }
+  },
+
+  "Error": {
+    "title": "Interner Fehler aufgetreten.",
+    "description": "Bitte laden Sie die Seite neu oder versuchen Sie es später erneut...",
+    "button": "Gehe nach Hause"
+  },
+
+  "NotFound": {
+    "status": "404",
+    "title": "GehGo to Homee nach Hause",
+    "description": "Die gesuchte Seite fehlt oder es ist ein interner Fehler aufgetreten...",
+    "button": "Gehe nach Hause"
+  },
+
+  "Metadata": {
+    "home": "Startseite - Modsen",
+    "blog": "Der Blog  - Modsen",
+    "privacyPolicy": "Datenschutzerklärung  - Modsen",
+    "aboutUs": "Über uns  - Modsen",
+    "search": "Suchen  - Modsen",
+    "contactUs": "Kontaktieren Sie uns  - Modsen",
+    "author": "{name} - Modsen",
+    "post": "{title} | {name} - Modsen"
   }
 }

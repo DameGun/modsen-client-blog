@@ -246,5 +246,29 @@
       "keyword": "keyword",
       "tagsNames": "tags"
     }
+  },
+
+  "Error": {
+    "title": "Internal Error Occured.",
+    "description": "Please reload the page or try again later...",
+    "button": "Go to Home"
+  },
+
+  "NotFound": {
+    "status": "404",
+    "title": "Page Not Found.",
+    "description": "The page you looking for is missing or internal error happened...",
+    "button": "Go to Home"
+  },
+
+  "Metadata": {
+    "home": "Home - Modsen",
+    "blog": "Blog - Modsen",
+    "privacyPolicy": "Privacy Policy - Modsen",
+    "aboutUs": "About Us - Modsen",
+    "search": "Search - Modsen",
+    "contactUs": "Contact Us - Modsen",
+    "author": "{name} - Modsen",
+    "post": "{title} | {name} - Modsen"
   }
 }
