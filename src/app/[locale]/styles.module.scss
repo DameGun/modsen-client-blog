@@ -1,0 +1,9 @@
+@use '@/styles/abstracts/mixins' as *;
+@import '@/styles/abstracts/variables.module';
+@import '@/styles/abstracts/extends.module';
+
+.errorContainer {
+  @include flex-with-options(column, $spacing-md, center, center);
+  @extend .sectionContainer;
+  text-align: center;
+}

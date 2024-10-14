@@ -15,7 +15,12 @@ type VideoModalProps = {
 export default function VideoModal({ onClose }: VideoModalProps) {
   return createPortal(
     <div className={styles.videoModal}>
-      <span className={styles.videoOverlay} onClick={onClose} />
+      <div className={styles.videoContainer}>
+        <video width='80%' controls preload='none'>
+          <source src='/video/stock-video.mp4' type='video/mp4' />
+        </video>
+        <span className={styles.videoOverlay} onClick={onClose} />
+      </div>
       <Image
         className={styles.videoCloseButton}
         src={closeIcon}
@@ -24,11 +29,6 @@ export default function VideoModal({ onClose }: VideoModalProps) {
         alt='Close Video Modal'
         onClick={onClose}
       />
-      <div className={styles.videoContainer}>
-        <video width='80%' controls preload='none'>
-          <source src='./video/stock-video.mp4' type='video/mp4' />
-        </video>
-      </div>
     </div>,
     document.body
   );
