@@ -40,13 +40,13 @@ export function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
     >
       <FormField errorText={errors.fullName?.message}>
-        <input placeholder={t('fullName')} {...register('fullName')} />
+        <input placeholder={t('fullName')} {...register('fullName')} data-testid='fullNameInput' />
       </FormField>
       <FormField errorText={errors.email?.message}>
-        <input placeholder={t('email')} {...register('email')} />
+        <input placeholder={t('email')} {...register('email')} data-testid='emailInput' />
       </FormField>
       <FormField errorText={errors.reason?.message}>
-        <select {...register('reason')}>
+        <select {...register('reason')} data-testid='reasonSelect'>
           {t.raw('reasons').map((val: string, index: number) => (
             <option key={index} value={val}>
               {val}
@@ -59,6 +59,7 @@ export function ContactForm() {
           placeholder={t('message')}
           {...register('message')}
           maxLength={MESSAGE_LENGTH_CONSTRAINT}
+          data-testid='messageTextarea'
         />
       </FormField>
       <Button isDisabled={!isValid} isLoading={isLoading}>
