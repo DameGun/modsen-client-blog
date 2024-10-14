@@ -1,10 +1,20 @@
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import { SectionHeader } from '@/components/ui';
 import extendsStyles from '@/styles/abstracts/extends.module.scss';
+import type { MetadataWithLocaleProps } from '@/types/i18n';
 
 import { ContactForm, MapboxMap } from './components';
 import styles from './styles.module.scss';
+
+export async function generateMetadata({ params: { locale } }: MetadataWithLocaleProps) {
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    title: t('contactUs'),
+  };
+}
 
 export default function ContactPage() {
   const t = useTranslations('Contact');

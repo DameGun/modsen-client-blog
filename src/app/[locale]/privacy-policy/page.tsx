@@ -1,7 +1,17 @@
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import { Article, List, SectionHeader } from '@/components/ui';
 import extendsStyles from '@/styles/abstracts/extends.module.scss';
+import type { MetadataWithLocaleProps } from '@/types/i18n';
+
+export async function generateMetadata({ params: { locale } }: MetadataWithLocaleProps) {
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    title: t('privacyPolicy'),
+  };
+}
 
 export default function PrivacyPolicyPage() {
   const t = useTranslations('PrivacyPolicy');

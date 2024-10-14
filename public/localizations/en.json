@@ -259,5 +259,16 @@
     "title": "Page Not Found.",
     "description": "The page you looking for is missing or internal error happened...",
     "button": "Go to Home"
+  },
+
+  "Metadata": {
+    "home": "Home - Modsen",
+    "blog": "Blog - Modsen",
+    "privacyPolicy": "Privacy Policy - Modsen",
+    "aboutUs": "About Us - Modsen",
+    "search": "Search - Modsen",
+    "contactUs": "Contact Us - Modsen",
+    "author": "{name} - Modsen",
+    "post": "{title} | {name} - Modsen"
   }
 }
