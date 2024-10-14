@@ -62,7 +62,7 @@ export function ContactForm() {
           data-testid='messageTextarea'
         />
       </FormField>
-      <Button isDisabled={!isValid} isLoading={isLoading}>
+      <Button isDisabled={!isValid} isLoading={isLoading} type='submit'>
         {t('button')}
       </Button>
       <RelativeAlert

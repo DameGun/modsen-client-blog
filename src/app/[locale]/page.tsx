@@ -20,7 +20,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <Post variant={PostVariant.Featured} post={featuredPost} />
+      <Post variant={PostVariant.Featured} post={featuredPost} data-testid='homeFeaturedPost' />
       {DynamicComponents.map(({ id, Component }) => (
         <RevealComponent key={id}>
           <Component />

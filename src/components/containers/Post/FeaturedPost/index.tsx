@@ -12,11 +12,12 @@ import { PostInfo } from '../PostInfo';
 export function FeaturedPost({
   post: { category, title, author, createdAt, description, image },
   handleClick,
+  ...rest
 }: PostVariantProps) {
   const t = useTranslations('Post');
 
   return (
-    <section className={styles.featurePostContainer}>
+    <section className={styles.featurePostContainer} {...rest}>
       <div className={styles.postImage}>
         <Image src={image} fill alt='Featured post image' />
       </div>

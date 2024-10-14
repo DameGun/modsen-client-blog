@@ -12,6 +12,7 @@ const config: Config = {
   moduleNameMapper: {
     'db.json': '<rootDir>/src/__mocks__/db.json',
   },
+  testMatch: ['<rootDir>/src/__tests__/**/*.test.(ts|tsx)'],
 };
 
 export default createJestConfig(config);

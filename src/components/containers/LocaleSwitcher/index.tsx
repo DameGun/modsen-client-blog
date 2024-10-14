@@ -29,6 +29,7 @@ export function LocaleSwitcher() {
       defaultValue={defaultLocale}
       disabled={isPending}
       onChange={handleSelectChange}
+      data-testid='localeSwitcher'
     >
       {routing.locales.map((current) => (
         <option key={current} value={current}>

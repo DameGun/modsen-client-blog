@@ -9,7 +9,9 @@
     "lint": "next lint",
     "format": "prettier . --write",
     "prepare": "husky",
-    "test:jest": "jest"
+    "test:jest": "jest --passWithNoTests",
+    "cypress:open": "cypress open",
+    "test:cypress": "cypress run --browser chrome"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -33,6 +35,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "classnames": "^2.5.1",
+    "cypress": "^13.15.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
     "eslint-plugin-simple-import-sort": "^12.1.1",
