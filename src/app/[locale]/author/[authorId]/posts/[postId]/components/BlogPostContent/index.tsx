@@ -8,8 +8,8 @@ type BlogPostContentProps = Pick<PostType, 'content'>;
 export function BlogPostContent({ content }: BlogPostContentProps) {
   return (
     <div className={styles.blogPostContentContainer}>
-      {content.map(({ title, paragraph }, index) => (
-        <Article key={index}>
+      {content.map(({ title, paragraph }) => (
+        <Article key={title}>
           <h2>{title}</h2>
           <p>{paragraph}</p>
         </Article>

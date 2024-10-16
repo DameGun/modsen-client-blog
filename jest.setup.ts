@@ -1,4 +1,4 @@
-import { TextDecoder as NodeTextDecoder,TextEncoder } from 'util';
+import { TextDecoder as NodeTextDecoder, TextEncoder } from 'util';
 
 import '@testing-library/jest-dom';
 

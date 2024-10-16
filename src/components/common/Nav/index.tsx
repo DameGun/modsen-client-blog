@@ -36,6 +36,7 @@ export function Nav({ onNavigate, policyVisible }: NavProps) {
       <Link
         href={Routes.Search}
         className={cn(styles.link, { [styles.active]: pathname.includes(Routes.Search) })}
+        onClick={onNavigate}
       >
         {t('search')}
       </Link>

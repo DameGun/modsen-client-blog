@@ -12,7 +12,7 @@
     height: 100%;
     background-color: $color-dark-blue;
     opacity: 0.3;
-    z-index: $z-index-sm;
+    z-index: $z-index-lg;
   }
 
   .headerNavContainer {
@@ -41,10 +41,10 @@
         height: 100%;
         width: 50%;
         background-color: $color-dark-gray;
+        z-index: $z-index-lg;
 
         &.isOpen {
           transform: translateX(0);
-          z-index: $z-index-sm;
         }
 
         &.disableTransition {
@@ -63,7 +63,7 @@
       @include tablet-breakpoint(lg) {
         &.isVisible {
           display: block;
-          z-index: $z-index-md;
+          z-index: $z-index-lg;
         }
       }
     }

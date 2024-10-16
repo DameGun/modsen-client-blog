@@ -1,10 +1,6 @@
-import type { PropsWithChildren } from 'react';
+import type { FormFieldProps } from '@/types/formControl';
 
 import styles from './styles.module.scss';
-
-type FormFieldProps = PropsWithChildren & {
-  errorText?: string;
-};
 
 export function FormField({ children, errorText }: FormFieldProps) {
   return (

@@ -23,6 +23,11 @@ a {
   }
 }
 
+html:has(.preventScroll) {
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+}
+
 main {
   min-height: 100vh;
 }
