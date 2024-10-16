@@ -29,12 +29,13 @@ export function Header() {
 
   return (
     <header className={styles.header}>
-      {isOpen && <div className={styles.overlay} />}
+      {isOpen && <div className={styles.overlay} onClick={handleClose} />}
       <div className={styles.headerNavContainer}>
         <h4>Modsen Client Blog</h4>
         <div
           className={cn(styles.linksContainer, {
             [styles.isOpen]: isOpen,
+            preventScroll: isOpen,
             [styles.disableTransition]: disableTransition,
           })}
         >

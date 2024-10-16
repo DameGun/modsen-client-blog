@@ -1,5 +1,6 @@
 import { createPortal } from 'react-dom';
 
+import cn from 'classnames';
 import Image from 'next/image';
 
 import closeIcon from '@/public/icons/close-icon.svg';
@@ -14,9 +15,9 @@ type VideoModalProps = {
 
 export default function VideoModal({ onClose }: VideoModalProps) {
   return createPortal(
-    <div className={styles.videoModal}>
+    <div className={cn(styles.videoModal, { preventScroll: true })}>
       <div className={styles.videoContainer}>
-        <video width='80%' controls preload='none'>
+        <video width='80%' controls>
           <source src='/video/stock-video.mp4' type='video/mp4' />
         </video>
         <span className={styles.videoOverlay} onClick={onClose} />

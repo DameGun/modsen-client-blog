@@ -7,8 +7,10 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import cn from 'classnames';
 import { useTranslations } from 'next-intl';
 
-import { FormField } from '@/components/containers/FormField';
 import { Button, RelativeAlert } from '@/components/ui';
+import { FormInput } from '@/components/ui/FormInput';
+import { FormSelect } from '@/components/ui/FormSelect';
+import { FormTextArea } from '@/components/ui/FormTextarea';
 import { AlertMessages } from '@/constants/alert';
 import { MESSAGE_LENGTH_CONSTRAINT } from '@/constants/validation';
 import { useEmail } from '@/hooks';
@@ -39,29 +41,31 @@ export function ContactForm() {
       className={cn(styles.contactForm, { [styles.isLoading]: isLoading })}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <FormField errorText={errors.fullName?.message}>
-        <input placeholder={t('fullName')} {...register('fullName')} data-testid='fullNameInput' />
-      </FormField>
-      <FormField errorText={errors.email?.message}>
-        <input placeholder={t('email')} {...register('email')} data-testid='emailInput' />
-      </FormField>
-      <FormField errorText={errors.reason?.message}>
-        <select {...register('reason')} data-testid='reasonSelect'>
-          {t.raw('reasons').map((val: string, index: number) => (
-            <option key={index} value={val}>
-              {val}
-            </option>
-          ))}
-        </select>
-      </FormField>
-      <FormField errorText={errors.message?.message}>
-        <textarea
-          placeholder={t('message')}
-          {...register('message')}
-          maxLength={MESSAGE_LENGTH_CONSTRAINT}
-          data-testid='messageTextarea'
-        />
-      </FormField>
+      <FormInput
+        errorText={errors.fullName?.message}
+        placeholder={t('fullName')}
+        {...register('fullName')}
+        data-testid='fullNameInput'
+      />
+      <FormInput
+        errorText={errors.email?.message}
+        placeholder={t('email')}
+        {...register('email')}
+        data-testid='emailInput'
+      />
+      <FormSelect
+        errorText={errors.reason?.message}
+        options={t.raw('reasons')}
+        {...register('reason')}
+        data-testid='reasonSelect'
+      />
+      <FormTextArea
+        errorText={errors.message?.message}
+        placeholder={t('message')}
+        {...register('message')}
+        maxLength={MESSAGE_LENGTH_CONSTRAINT}
+        data-testid='messageTextarea'
+      />
       <Button isDisabled={!isValid} isLoading={isLoading} type='submit'>
         {t('button')}
       </Button>
